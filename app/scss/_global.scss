@@ -74,7 +74,8 @@ h3{
 input{
     outline: none;
 }
-.btn:focus {
+a,
+button:focus {
 	box-shadow: none;
 	outline: none;
 }
@@ -90,6 +91,10 @@ button:not(:disabled) {
     font-weight: 500;
     color: #263238;
     font-family: 'Roboto', sans-serif;
+}
+.rate-star{
+    display: inline-block;
+    margin-right: 13px;
 }
 @media (max-width: 720px){
     .container-fluid{
