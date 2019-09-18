@@ -13,12 +13,20 @@ body{
     font-size: 15px;
     line-height: 24px;
     background-color: #f4f6f5;
+}
+.container-fluid{
     
+    // max-width: 2040px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 30px;
+}    
 .container{
     width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
 }
+
 ul,
 li{
     margin: 0;
@@ -51,12 +59,17 @@ img {
     align-items: center;
 
 }
-h1{
+h1, h3{
     font-size: 48px;
     color: #fff;
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
-    
+    text-align: center;
+}
+h3{
+    font-size: 36px;
+    color: #263238;
+    line-height: 60px;
 }
 input{
     outline: none;
@@ -69,6 +82,17 @@ input{
 button:not(:disabled) {
     cursor: pointer;
     outline: none;
+    border: none;
+    
 }
-
+.item-title{
+    font-size: 18px;
+    font-weight: 500;
+    color: #263238;
+    font-family: 'Roboto', sans-serif;
+}
+@media (max-width: 720px){
+    .container-fluid{
+        padding: 0 15px;
+    }    
 }
