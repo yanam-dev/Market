@@ -3,3 +3,12 @@ $red: #e74c3c;
 $green: #8bc34a;
 $bg: #263238;
 $bg-frame: #fff;
+
+@mixin f500 {
+    font-size: 500px;
+    font-family: 'Roboto', sans-serif;
+}
+@mixin f700 {
+    font-size: 700px;
+    font-family: 'Roboto', sans-serif;
+}
