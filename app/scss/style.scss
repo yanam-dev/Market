@@ -265,7 +265,7 @@ form{
 }
 // end 3rd section
 
-//   start 4th section
+//   start advantages section
 .advantages{
     background-color: $bg;
     padding: 100px 0 50px;
@@ -320,3 +320,38 @@ form{
         color: #6a767c;
     }
 }
+// end advantages section
+
+// start author section
+.author{
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        min-height: 812px;
+        justify-content: center;
+
+    &__item{
+        max-width: 656px;
+        min-height: 216px;
+        width: 100%;
+        background-color: $green;
+        justify-content: center;
+        &-title{
+            max-width: 260px;
+            width: 100%;
+            margin-right: 45px;
+        span{
+            font-weight: 700;
+            }
+        }
+        &-link{
+            padding: 14px 40px;
+            font-size: 18px;
+            height: 64px;
+            color: $bg;
+            background-color: #fff;
+            line-height: 36px;
+        }
+    }
+}
+// end author section
