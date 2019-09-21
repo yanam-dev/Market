@@ -5,10 +5,11 @@ $bg: #263238;
 $bg-frame: #fff;
 
 @mixin f500 {
-    font-size: 500px;
+    font-weight: 500;
     font-family: 'Roboto', sans-serif;
 }
+
 @mixin f700 {
-    font-size: 700px;
+    font-weight: 700;
     font-family: 'Roboto', sans-serif;
 }

@@ -70,7 +70,7 @@
         
         &-txt{
             color: #fff;
-            font-weight: f500;
+            @include f500;
             font-size: 20px;
             line-height: 30px;
             margin-bottom: 50px;
@@ -94,7 +94,8 @@ form{
         line-height: 30px;
         padding-left: 25px;
         &::placeholder{
-            font-weight: f500;
+            @include f500;
+            font-family: 'Roboto', sans-serif;
             color: #90a4ae;
         }  
     }
@@ -123,7 +124,7 @@ form{
     button{
         padding: 10px 18px 12px;
         color: $bg;
-        font-weight: f500;
+        @include f500;
         font-size: 14px;
         margin-right: 6px;
         background-color: #fff;
@@ -162,13 +163,13 @@ form{
     }
     &-content{
         padding: 10px 30px;
-        font-weight: f500;
+        @include f500;
         min-height: 88px;
         border-bottom: 1px solid #e7ecf2;
     }
     &-price{
         font-size: 20px;
-        font-weight: f700;
+        @include f700;
         color: $bg;
     }
     &-info{
@@ -181,7 +182,7 @@ form{
         span{
             font-size: 14px;
             color: $text;
-            font-weight: f500;
+            @include f500;
         }
         .avatar{
             width: 30px;
@@ -298,7 +299,7 @@ form{
     &-title{
         font-size: 24px;
         color: #fff;
-        font-weight: f500;
+        @include f500;
         margin-bottom: 20px;
         transition: all 1s ease;
     }
@@ -355,3 +356,32 @@ form{
     }
 }
 // end author section
+// start tutorial section
+.tutorial{
+    padding: 60px 0 120px;
+    background-color: #fff;
+    &__item{
+        a{max-width: 370px;
+        width: 100%;}
+    }
+}
+.tutorial__item{
+    &-img{
+        display: block;
+        min-height: 270px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    &-title{
+        color: $bg;
+        background-color: #f8f8f8;
+        font-size: 21px;
+        @include f700;
+        letter-spacing: 0;
+        padding: 32px 80px;
+        text-align: center;
+    }
+}
+
+// end tutorial section
