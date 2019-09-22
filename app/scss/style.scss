@@ -58,7 +58,7 @@
 }
 // end header
 
-// start 1st section
+// start search section
 .search{
     background-repeat: no-repeat;
     background-size: cover;
@@ -83,20 +83,28 @@
         }
     }
 }
+.search__form{
+    input{
+        border-radius: 4px;
+        border: none;
+        line-height: 30px;
+        padding-left: 25px;
+        height: 56px;
+        box-shadow: 0px 1px 10px 0px rgba(124, 178, 64, 0.75);
+        &::placeholder{
+            @include f500;
+            color: #90a4ae;
+        }
+    }
+}
+
 form{
     input{
         display: block;
         width: 100%;
-        border-radius: 4px;
-        height: 56px;
-        border: none;
-        box-shadow: 0px 1px 10px 0px rgba(124, 178, 64, 0.75);
-        line-height: 30px;
-        padding-left: 25px;
         &::placeholder{
-            @include f500;
             font-family: 'Roboto', sans-serif;
-            color: #90a4ae;
+            font-size: 14px;
         }  
     }
     button{
@@ -108,9 +116,9 @@ form{
         padding: 19px 20px 17px;
     }
 }
-// end 1st section
+// end search section
 
-// start 2nd section
+// start products section
 .products{
     padding: 110px 0 130px;
     &__title{
@@ -258,7 +266,7 @@ form{
    }
 }
 .slick-dots li.slick-active button:before {
-    background-color: #8bc34a;
+    background-color: $green;
     border: none;
 }
 .slick-dotted.slick-slider {
@@ -338,7 +346,7 @@ form{
         background-color: $green;
         justify-content: center;
         &-title{
-            max-width: 260px;
+            max-width: 263px;
             width: 100%;
             margin-right: 45px;
         span{
@@ -356,6 +364,7 @@ form{
     }
 }
 // end author section
+
 // start tutorial section
 .tutorial{
     padding: 60px 0 120px;
@@ -385,3 +394,167 @@ form{
 }
 
 // end tutorial section
+// start footer
+.footer{
+    background: $bg;
+    &__content{
+        padding: 100px 0 80px;
+    }
+}
+
+.footer__col{
+    max-width: 270px;
+    width: 100%;
+    &-title{
+        @include f700;
+        font-family: 'Raleway', sans-serif;
+        color: #fff;
+        font-size: 22px;
+        line-height: 24px;
+        padding-bottom: 30px;
+        margin-bottom: 34px;
+        position: relative;
+        &:after{
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            content: '';
+            background-color: $green;
+            width: 51px;
+            height: 3px;
+        }
+    }
+    &-txt{
+        color: $text-min;
+        margin-bottom: 12px;
+    }
+    &-contacts{
+        margin-top: 18px;
+        font-size: 16px;
+        font-weight: 600;
+        font-family: 'Raleway', sans-serif;
+        padding-left: 30px;
+        position: relative;
+        &:before{
+            content: "";
+            position: absolute;
+            font-family: 'icomoon';
+            font-size: 18px;
+            left: 0;
+            color: $green;
+        }
+    }
+    &-adress{
+        &:before{
+            content: "\f041";
+            top: 8px;
+        }
+    }
+    &-phone{
+        &:before{
+            content: "\f095";
+        }
+    }
+    &-list{
+        a{
+            margin-bottom: 16px;
+            color: $text-min;
+            display: block;
+            padding-left: 22px;
+            position: relative;
+            &:before{
+                content: "\f105";
+                left: 0;
+                position: absolute;
+                color: $green;
+                font-size: 18px;
+                font-family: 'icomoon';
+            }
+        }
+    }
+    &-menu{
+        max-width: 220px;
+    }
+}
+
+.footer__social-link{
+    margin-bottom: 37px;
+    a{
+        width: 28px;
+        height: 28px;
+        background-image: url(../images/content/css_sprites.png);
+        & + a{
+            margin-left: 7px;
+        }
+    }
+    .link-twitter{
+        background-position: -31px -1px;
+    }
+    .link-youtube{
+        background-position: -1px -31px;
+    }
+    .link-linkedin{
+        background-position: -31px -31px;
+    }
+    .link-pinterest{
+        background-position: -61px -1px;
+    }
+}
+.footer__sign{
+    &-title{
+        font-size: 20px;
+        color: #fff;
+        font-weight: 400;
+        line-height: 36px;
+        margin-bottom: 13px;
+    }
+}
+
+.footer__form{
+    position: relative;
+    input{
+        max-width: 260px;
+        line-height: 30px;
+        padding-left: 15px;
+        padding-right: 50px;
+        height: 38px;
+        background-color: #2f3c43;
+        border: 1px solid transparent;
+        border-image: linear-gradient(to bottom, #000 0%,#000 60%, #253136 80%, #253136 100%);
+        border-image-slice: 1;
+        &::placeholder{
+            color: #697378;
+            line-height: 36px;
+        }
+    }
+    button{
+        position: absolute;
+        right: 11px;
+        top: 1px;
+        background-color: $green;
+        border: none;
+        height: 36px;
+        width: 41px;
+        &:before{
+            content: "\f124";
+            position: absolute;
+            color: #fff;
+            font-size: 20px;
+            font-family: 'icomoon';
+            top: 8px;
+            left: 12px;
+        }
+    }
+}
+.footer__copy{
+    border-top: 1px solid #424d53;
+    span{
+        text-align: center;
+        font-size: 15px;
+        color:#919191;
+        padding: 18px 0;
+        line-height: 36px;
+        display: block;
+    }
+}
+// end footer
