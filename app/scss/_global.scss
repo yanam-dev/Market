@@ -2,7 +2,10 @@
 html{
     box-sizing: border-box;
 }
-
+html,
+body{
+    height: 100%;
+}
 *,
 *:before,
 *:after{
@@ -16,8 +19,6 @@ body{
     font-weight: 400;
 }
 .container-fluid{
-    
-    // max-width: 2040px;
     max-width: 100%;
     margin: 0 auto;
     padding: 0 30px;
@@ -27,7 +28,17 @@ body{
     margin: 0 auto;
     padding: 0 15px;
 }
-
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+.content{
+    flex: 1 0 auto;
+}
+// .page-content{
+//     background-color: #f4f6f5;
+// }
 ul,
 li{
     margin: 0;
@@ -78,6 +89,11 @@ h4{
     line-height: 36px;
     font-weight: 400;
 }
+h5{
+    font-size: 20px;
+    color: #263238;
+    font-weight: f700;
+}
 input{
     outline: none;
 }
@@ -103,6 +119,44 @@ button:not(:disabled) {
     display: inline-block;
     margin-right: 13px;
 }
+
+// start breadcrumbs section
+.breadcrumbs{
+    &__inner{
+        padding: 45px 0 40px;
+    }
+    &__list{ 
+        li{
+             position: relative;
+            &:last-child{
+                padding-left: 24px;
+                color: #263238;
+                &:before{
+                content:'-';
+                position: absolute;
+                left: 8px;
+                color: #8bc34a;
+                }
+            }
+        }
+        li > a{
+            color: #b0bec5;
+            font-size: 15px; 
+        }
+      }
+    a,
+    span{
+        color: #263238;  
+        font-size: 15px; 
+    }
+}
+
+// end breadcrumbs section
+
+
+
+
+
 @media (max-width: 720px){
     .container-fluid{
         padding: 0 15px;

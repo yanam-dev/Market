@@ -53,5 +53,29 @@
   }
   .icon-location-arrow:before {
 	content: "\f124";
-  }
+	}
+	.icon-search:before {
+		content: "\f002";
+	}
+	.icon-th-large:before {
+		content: "\f009";
+	}
+	.icon-th-list:before {
+		content: "\f00b";
+	}
+	.icon-sort-desc:before {
+		content: "\f0dd";
+	}
+	.icon-sort-down:before {
+		content: "\f0dd";
+	}
+	.icon-sort-asc:before {
+		content: "\f0de";
+	}
+	.icon-sort-up:before {
+		content: "\f0de";
+	}
+	.icon-sort-amount-desc:before {
+		content: "\f161";
+	}
   
