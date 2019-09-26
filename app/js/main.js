@@ -23,6 +23,10 @@ $(".js-range-slider").ionRangeSlider({
     grid: true
 });
 
+$(".icon-th-list").on('click', function () {
+    $('.products__item').addClass('list')
+});
+
     var mixer = mixitup('.products__box');
     
    
