@@ -119,7 +119,21 @@ button:not(:disabled) {
     display: inline-block;
     margin-right: 13px;
 }
+// start menu palette
 
+.angle-right{
+    position: relative;
+    padding-left: 15px;
+    color: #546e7a;
+    &:before{
+        content: "\f105";
+        font-family: 'icomoon';
+        font-size: 14px;
+        left: 0;
+        position: absolute;
+        color: #8bc34a;
+    }
+} 
 // start breadcrumbs section
 .breadcrumbs{
     &__inner{
@@ -150,7 +164,6 @@ button:not(:disabled) {
         font-size: 15px; 
     }
 }
-
 // end breadcrumbs section
 
 
