@@ -13,1116 +13,1132 @@
 </head>
 <body>
 <!-- start header -->
-<header class="header" id="header">
-    <div class="header__top">
-       <div class="container">
-           <div class="header__top-inner d-flex justify-content-between align-items-center">
-                <div class="header__logo">
-                    <a href="#">
-                        <img src="images/logo.png" alt="Modern Market Logo">
-                    </a>
+<div class="wrapper">
+    <div class="content">
+        <header class="header" id="header">
+            <div class="header__top">
+                <div class="container">
+                    <div class="header__top-inner d-flex justify-content-between align-items-center">
+                        <div class="header__logo">
+                            <a href="#">
+                                <picture>
+                                    <source srcset="images/logo-sm.png" media="(max-width: 420px)">
+                                    <source srcset="images/logo-small.png" media="(max-width: 460px)">
+                                    <source>
+                                        <img src="images/logo.png" alt="Modern Market Logo">
+                                </picture>
+                            </a> 
+                        </div>
+                        <div class="header__txt">
+                            <a href="#">
+                                <span>Need help?</span>
+                            </a>
+                            Talk to an expert:
+                            <a href="tel:+61383766284" class="header__txt-tel">
+                                +61 3 8376 6284
+                            </a>
+                        </div>
+                        <div class="header__box d-flex align-items-center">
+                                <div class="notification__box header__btn-logout-off">
+                                    <a href="#" class="notification header__circle active icon-bell-o">
+                                        <span>8</span>
+                                    </a>
+                                    <div class="circle__menu notification__menu">
+                                        <div class="circle__item icon-bell-o icon-colored d-flex align-items-center">
+                                            <img class="circle__img" src="images/content/user1.jpg" alt="User">
+                                            <div class="circle__info">
+                                                <div class="circle__info-theme">
+                                                Need WP Help!
+                                                </div>
+                                                <div class="circle__info-data">
+                                                01 Dec, 2016
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="circle__item icon-bell-o d-flex align-items-center">
+                                            <img class="circle__img" src="images/content/user.jpg" alt="User">
+                                            <div class="circle__info">
+                                                <div class="circle__info-theme">
+                                                    Need WP Help!
+                                                </div>
+                                                <div class="circle__info-data">
+                                                    26 Nov, 2016
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="circle__item icon-bell-o d-flex align-items-center">
+                                            <img class="circle__img" src="images/content/user3.jpg" alt="User">
+                                            <div class="circle__info">
+                                                <div class="circle__info-theme">
+                                                    Need WP Help!
+                                                </div>
+                                                <div class="circle__info-data">
+                                                    01 Dec, 2016
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="message__box header__btn-logout-off">
+                                    <a href="#" class="message header__circle active icon-envelope-o">
+                                        <span>5</span>
+                                    </a>
+                                    <div class="circle__menu message__menu">
+                                        <div class="circle__item icon-envelope-o icon-colored d-flex align-items-center">
+                                            <img class="circle__img" src="images/content/user1.jpg" alt="User">
+                                            <div class="circle__info">
+                                                <div class="circle__info-name">
+                                                    Kazi Fahim
+                                                </div>
+                                                <div class="circle__info-theme">
+                                                    Need WP Help!
+                                                </div>
+                                                <div class="circle__info-data">
+                                                    01 Dec, 2016
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="circle__item icon-envelope-o d-flex align-items-center">
+                                            <img class="circle__img" src="images/content/user.jpg" alt="User">
+                                            <div class="circle__info">
+                                                <div class="circle__info-name">
+                                                    Richi Lenal
+                                                </div>
+                                                <div class="circle__info-theme">
+                                                    Need WP Help!
+                                                </div>
+                                                <div class="circle__info-data">
+                                                26 Nov, 2016
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="circle__item icon-mail-reply d-flex align-items-center">
+                                            <img class="circle__img" src="images/content/user3.jpg" alt="User">
+                                            <div class="circle__info">
+                                                <div class="circle__info-name">
+                                                    PsdRoss
+                                                </div>
+                                                <div class="circle__info-theme">
+                                                    Psd Template Help!
+                                                </div>
+                                                <div class="circle__info-data">
+                                                26 Nov, 2016
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="basket__box">
+                                    <a href="#" class="basket header__circle active icon-shopping-cart">
+                                        <span>8</span>
+                                    </a>
+                                    <div class="circle__menu">
+                                        <a href="#" class="circle__item d-flex align-items-center">
+                                            <img class="circle__img" src="images/content/basket-cat.jpg" alt="Article">
+                                            <div class="circle__info">
+                                                <div class="circle__info-name">
+                                                    Grand Ballet
+                                                </div>
+                                                <div class="circle__info-theme">
+                                                    WordPress
+                                                </div>
+                                                <div class="circle__info-price">
+                                                    $59
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="circle__item d-flex align-items-center">
+                                            <img class="circle__img" src="images/content/basket-aero.jpg" alt="Article">
+                                            <div class="circle__info">
+                                                <div class="circle__info-name">
+                                                    Apple Device
+                                                </div>
+                                                <div class="circle__info-theme">
+                                                    WordPress
+                                                </div>
+                                                <div class="circle__info-price">
+                                                    $59
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="basket__sum">
+                                            <div class="basket__sum-total d-flex justify-content-between">
+                                                <div class="basket__sum-title">
+                                                    Total 
+                                                </div>
+                                                <div class="basket__sum-price">
+                                                    $118
+                                                </div>
+                                            </div>
+                                            <a class="basket__btn basket__btn-cart" href="#">Go to Cart</a>
+                                            <a class="basket__btn basket__btn-check" href="#">Go to Checkout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="user__box">
+                                    <a href="#" class="user header__btn-logout-off">
+                                        <div class="user__inner d-flex align-items-center">
+                                            <div class="user__image">
+                                                <img src="images/content/user-header.jpg" alt="User">
+                                            </div>
+                                            <div class="user__data">
+                                                <div class="user__name">
+                                                    Mike Hussy
+                                                </div>
+                                                <div class="user__money">
+                                                    $171.00
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="user-menu">
+                                        <ul>
+                                            <li><a class="angle-right" href="#">Profile Page</a></li>
+                                            <li><a class="angle-right" href="#">Portfolio</a></li>
+                                            <li><a class="angle-right" href="#">Account Setting</a></li>
+                                            <li><a class="angle-right" href="#">Downloads</a></li>
+                                            <li><a class="angle-right" href="#">Wishlist</a></li>
+                                            <li><a class="angle-right" href="#">Upload Item</a></li>
+                                            <li><a class="angle-right" href="#">Statement</a></li>
+                                            <li><a class="angle-right" href="#">Withdraws</a></li>
+                                            <li><a href="#" class="header__btn">Logout</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            <a href="#" class="header__btn header__btn-log header__btn-log-on">Login</a>
+                            <a href="#" class="header__btn header__btn-logout header__btn-logout-off">Logout</a>
+                            <a href="#" class="header__btn header__btn-reg header__btn-log-on">Register</a>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+            <div class="header__menu">
+                <div class="container">
+                    <nav class="menu d-flex justify-content-between align-items-center">
+                        <div class="menu__btn">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <ul class="menu__list">               
+                            <li>
+                                <a href="#">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    About
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    WordPress 
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Joomla
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    PSD
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Plugins
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Components
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Pages
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Contact
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Help
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
-                <div class="header__txt">
-                    <a href="#">
-                        <span>Need help?</span>
-                    </a>
-                    Talk to an expert:
-                    <a href="tel:+61383766284" class="header__txt-tel">
-                        +61 3 8376 6284
-                    </a>
+            </div>
+        </header>
+    <!-- end header -->
+    <!-- start search section -->
+    <section class="search" style="background-image: url(images/bg-green-1page.jpg)">
+        <div class="container">
+            <div class="search__inner">
+                <h1 class="search__inner-title">
+                    Welcome To Foxtar Market Place!
+                </h1>
+                <div class="search__inner-txt">
+                    Premium WordPress Themes, Web Templates and Many More &#8230
                 </div>
-            <div class="header__box d-flex align-items-center">
-                <div class="notification__box">
-                    <a href="#" class="notification header__circle active icon-bell-o">
-                        <span>8</span>
-                    </a>
-                    <div class="circle__menu notification__menu">
-                        <a href="#" class="circle__item icon-bell-o icon-colored d-flex align-items-center">
-                            <img class="circle__img" src="images/content/user1.jpg" alt="">
-                            <div class="circle__info">
-                                <div class="circle__info-theme">
-                                   Need WP Help!
-                                </div>
-                                <div class="circle__info-data">
-                                   01 Dec, 2016
-                                </div>
-                            </div>
+                <div class="search__inner-form">
+                    <form class="search__form" action="">
+                        <input type="text" placeholder="Search Your Keywords &#8230" required>
+                        <button type="submit">
+                            <img src="images/icons/search.svg" alt="">
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end search section -->
+    <!-- start products section -->
+    <section id="products" class="products">
+        <div class="container-fluid">
+            <h3 class="products__title">
+                    Let’s Check Out Our Newest Release Products
+                </h3>
+                <div class="products__inner">
+                    <div class="products__inner-btn">
+                        <button type="button" data-filter="all">All</button>
+                        <button type="button" data-filter=".category-wordpress">Wordpress</button>
+                        <button type="button" data-filter=".category-joomla">Joomla</button>
+                        <button type="button" data-filter=".category-plugins">Plugins</button>
+                        <button type="button" data-filter=".category-component">Component</button>
+                        <button type="button" data-filter=".category-psd">PSD</button>
+                    </div>
+                </div> 
+        
+            <div class="products__box d-flex">
+                <div class="products__item mix category-component category-popular" data-order="1">
+                    <a href="#" class="products__item-img" style="background-image: url(images/content/product-item-mobileApp.jpg)"></a>
+                    <div class="products__item-content d-flex justify-content-between align-items-center">
+                        <div class="products__item-name">
+                            <a href="#" class="products__item-title item-title">
+                                Responsive Mobile APP
+                            </a>
+                            <a href="#" class="products__item-category">
+                                Site Template
+                            </a>
+                        </div>
+                        <div class="products__item-price">
+                            $19
+                        </div>
+                    </div>
+                    <div class="products__item-info d-flex justify-content-between">
+                        <a class="products__item-author d-flex align-items-center">
+                            <div class="avatar" style="background-image: url(images/content/user.jpg)"></div>
+                            <span>Radiustheme</span>    
                         </a>
-                        <a href="#" class="circle__item icon-bell-o d-flex align-items-center">
-                            <img class="circle__img" src="images/content/user.jpg" alt="">
-                            <div class="circle__info">
-                                <div class="circle__info-theme">
-                                    Need WP Help!
-                                </div>
-                                <div class="circle__info-data">
-                                    26 Nov, 2016
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="circle__item icon-bell-o d-flex align-items-center">
-                            <img class="circle__img" src="images/content/user3.jpg" alt="">
-                            <div class="circle__info">
-                                <div class="circle__info-theme">
-                                    Need WP Help!
-                                </div>
-                                <div class="circle__info-data">
-                                    01 Dec, 2016
-                                </div>
-                            </div>
-                        </a>
+                        <div class="products__item-stars">
+                            <div class="rate-star"></div>
+                            (<span>05</span>)
+                        </div>
                     </div>
                 </div>
-                <div class="message__box">
-                    <a href="#" class="message header__circle active icon-envelope-o">
-                        <span>5</span>
-                    </a>
-                    <div class="circle__menu message__menu">
-                        <div class="circle__item icon-envelope-o icon-colored d-flex align-items-center">
-                            <img class="circle__img" src="images/content/user1.jpg" alt="">
-                            <div class="circle__info">
-                                <div class="circle__info-name">
-                                    Kazi Fahim
-                                </div>
-                                <div class="circle__info-theme">
-                                    Need WP Help!
-                                </div>
-                                <div class="circle__info-data">
-                                    01 Dec, 2016
-                                </div>
-                            </div>
+                <div class="products__item mix category-wordpress category-popular" data-order="2">
+                    <a href="#" class="products__item-img" style="background-image: url(images/content/product-item-Apple.jpg)"></a>
+                    <div class="products__item-content d-flex justify-content-between align-items-center">
+                        <div class="products__item-name">
+                            <a href="#" class="products__item-title item-title">
+                                The Post Grid Pro
+                            </a>
+                            <a href="#" class="products__item-category">
+                                WordPress Plugin
+                            </a>
                         </div>
-                        <div class="circle__item icon-envelope-o d-flex align-items-center">
-                            <img class="circle__img" src="images/content/user.jpg" alt="">
-                            <div class="circle__info">
-                                <div class="circle__info-name">
-                                    Richi Lenal
-                                </div>
-                                <div class="circle__info-theme">
-                                    Need WP Help!
-                                </div>
-                                <div class="circle__info-data">
-                                   26 Nov, 2016
-                                </div>
-                            </div>
+                        <div class="products__item-price">
+                            $15
                         </div>
-                        <div class="circle__item icon-mail-reply d-flex align-items-center">
-                            <img class="circle__img" src="images/content/user3.jpg" alt="">
-                            <div class="circle__info">
-                                <div class="circle__info-name">
-                                    PsdRoss
-                                </div>
-                                <div class="circle__info-theme">
-                                    Psd Template Help!
-                                </div>
-                                <div class="circle__info-data">
-                                   26 Nov, 2016
-                                </div>
-                            </div>
+                    </div>
+                    <div class="products__item-info d-flex justify-content-between">
+                        <a class="products__item-author d-flex align-items-center">
+                            <div class="avatar" style="background-image: url(images/content/user.jpg)"></div>
+                            <span>PSDbossD</span>    
+                        </a>
+                        <div class="products__item-stars">
+                            <div class="rate-star"></div>
+                            (<span>05</span>)
                         </div>
                     </div>
                 </div>
-                <div class="basket__box">
-                    <a href="#" class="basket header__circle active icon-shopping-cart">
-                        <span>8</span>
-                    </a>
-                    <div class="circle__menu">
-                        <a href="#" class="circle__item d-flex align-items-center">
-                            <img class="circle__img" src="images/content/basket-cat.jpg" alt="">
-                            <div class="circle__info">
-                                <div class="circle__info-name">
-                                    Grand Ballet
-                                </div>
-                                <div class="circle__info-theme">
-                                    WordPress
-                                </div>
-                                <div class="circle__info-price">
-                                    $59
-                                </div>
-                            </div>
+                <div class="products__item mix category-wordpress category-plugins category-popular" data-order="3">
+                    <a href="#" class="products__item-img" style="background-image: url(images/content/product-item-wordpress.jpg)"></a>
+                    <div class="products__item-content d-flex justify-content-between align-items-center">
+                        <div class="products__item-name">
+                            <a href="#" class="products__item-title item-title">
+                                Food Menu
+                            </a>
+                            <a href="#" class="products__item-category">
+                                WordPress Plugin
+                            </a>
+                        </div>
+                        <div class="products__item-price">
+                            $20
+                        </div>
+                    </div>
+                    <div class="products__item-info d-flex justify-content-between">
+                        <a class="products__item-author d-flex align-items-center">
+                            <div class="avatar" style="background-image: url(images/content/user.jpg)"></div>
+                            <span>Marillip</span>    
                         </a>
-                        <a href="#" class="circle__item d-flex align-items-center">
-                            <img class="circle__img" src="images/content/basket-aero.jpg" alt="">
-                            <div class="circle__info">
-                                <div class="circle__info-name">
-                                    Apple Device
-                                </div>
-                                <div class="circle__info-theme">
-                                    WordPress
-                                </div>
-                                <div class="circle__info-price">
-                                    $59
-                                </div>
-                            </div>
-                        </a>
-                        <div class="basket__sum">
-                            <div class="basket__sum-total d-flex justify-content-between">
-                                <div class="basket__sum-title">
-                                    Total 
-                                </div>
-                                <div class="basket__sum-price">
-                                    $118
-                                </div>
-                            </div>
-                            <a class="basket__btn basket__btn-cart" href="#">Go to Cart</a>
-                            <a class="basket__btn basket__btn-check" href="#">Go to Checkout</a>
+                        <div class="products__item-stars">
+                            <div class="rate-star"></div>
+                            (<span>05</span>)
                         </div>
                     </div>
                 </div>
-                <div class="user__box">
-                    <a href="#" class="user">
-                        <div class="user__inner d-flex align-items-center">
-                            <div class="user__image">
-                                <img src="images/content/user-header.jpg" alt="">
-                            </div>
-                            <div class="user__data">
-                                <div class="user__name">
-                                    Mike Hussy
-                                </div>
-                                <div class="user__money">
-                                    $171.00
-                                </div>
-                            </div>
+                <div class="products__item mix category-psd category-new" data-order="4">
+                    <a href="#" class="products__item-img" style="background-image: url(images/content/product-item-4.jpg)"></a>
+                    <div class="products__item-content d-flex justify-content-between align-items-center">
+                        <div class="products__item-name">
+                            <a href="#" class="products__item-title item-title">
+                                Imac Mockup
+                            </a>
+                            <a href="#" class="products__item-category">
+                                PSD Template
+                            </a>
                         </div>
+                        <div class="products__item-price">
+                            $12
+                        </div>
+                    </div>
+                    <div class="products__item-info d-flex justify-content-between">
+                        <a class="products__item-author d-flex align-items-center">
+                            <div class="avatar" style="background-image: url(images/content/user.jpg)"></div>
+                            <span>Lollypop</span>    
+                        </a>
+                        <div class="products__item-stars">
+                            <div class="rate-star"></div>
+                            (<span>05</span>)
+                        </div>
+                    </div>
+                </div>
+
+                <div class="products__item mix category-joomla category-new" data-order="5">
+                    <a href="#" class="products__item-img" style="background-image: url(images/content/product-item-gymedge.jpg)"></a>
+                    <div class="products__item-content d-flex justify-content-between align-items-center">
+                        <div class="products__item-name">
+                            <a href="#" class="products__item-title item-title">
+                                Gymedge
+                            </a>
+                            <a href="#" class="products__item-category">
+                                Joomla Template
+                            </a>
+                        </div>
+                        <div class="products__item-price">
+                            $45
+                        </div>
+                    </div>
+                    <div class="products__item-info d-flex justify-content-between">
+                        <a class="products__item-author d-flex align-items-center">
+                            <div class="avatar" style="background-image: url(images/content/user.jpg)"></div>
+                            <span>Micrsof</span>    
+                        </a>
+                        <div class="products__item-stars">
+                            <div class="rate-star"></div>
+                            (<span>05</span>)
+                        </div>
+                    </div>
+                </div>
+
+                <div class="products__item mix category-plugins category-new" data-order="6">
+                    <a href="#" class="products__item-img" style="background-image: url(images/content/product-item-dollface.jpg)"></a>
+                    <div class="products__item-content d-flex justify-content-between align-items-center">
+                        <div class="products__item-name">
+                            <a href="#" class="products__item-title item-title">
+                                The Post Grid Pro
+                            </a>
+                            <a href="#" class="products__item-category">
+                                WordPress Plugin
+                            </a>
+                        </div>
+                        <div class="products__item-price">
+                            $19
+                        </div>
+                    </div>
+                    <div class="products__item-info d-flex justify-content-between">
+                        <a class="products__item-author d-flex align-items-center">
+                            <div class="avatar" style="background-image: url(images/content/user.jpg)"></div>
+                            <span>Racklous</span>    
+                        </a>
+                        <div class="products__item-stars">
+                            <div class="rate-star"></div>
+                            (<span>05</span>)
+                        </div>
+                    </div>
+                </div>
+
+                <div class="products__item mix category-plugins category-component category-popular" data-order="7">
+                    <a href="#" class="products__item-img" style="background-image: url(images/content/product-item-gridproBlue.jpg)"></a>
+                    <div class="products__item-content d-flex justify-content-between align-items-center">
+                        <div class="products__item-name">
+                            <a href="#" class="products__item-title item-title">
+                                Responsive Mobile APP
+                            </a>
+                            <a href="#" class="products__item-category">
+                                Site Template
+                            </a>
+                        </div>
+                        <div class="products__item-price">
+                            $19
+                        </div>
+                    </div>
+                    <div class="products__item-info d-flex justify-content-between">
+                        <a class="products__item-author d-flex align-items-center">
+                            <div class="avatar" style="background-image: url(images/content/user.jpg)"></div>
+                            <span>Radiustheme</span>    
+                        </a>
+                        <div class="products__item-stars">
+                        <div class="rate-star"></div>
+                        (<span>05</span>)
+                        </div>
+                    </div>
+                </div>
+                <div class="products__item mix category-psd category-new" data-order="8">
+                    <a href="#" class="products__item-img" style="background-image: url(images/content/product-item-designMockup.jpg)"></a>
+                    <div class="products__item-content d-flex justify-content-between align-items-center">
+                        <div class="products__item-name">
+                            <a href="#" class="products__item-title item-title">
+                                Responsive Mobile APP
+                            </a>
+                            <a href="#" class="products__item-category">
+                                Psd Template
+                            </a>
+                        </div>
+                        <div class="products__item-price">
+                            $19
+                        </div>
+                    </div>
+                    <div class="products__item-info d-flex justify-content-between">
+                        <a class="products__item-author d-flex align-items-center">
+                            <div class="avatar" style="background-image: url(images/content/user.jpg)"></div>
+                            <span>Radiustheme</span>    
+                        </a>
+                        <div class="products__item-stars">
+                            <div class="rate-star"></div>
+                            (<span>05</span>)
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="products__bottom-btn">
+                <button type="button" data-filter=".category-new">All new items</button>
+                <button type="button" data-filter=".category-popular">Popular Items</button>
+            </div>
+        </div>
+    </section>
+    <!-- end products section -->
+    <!-- start products-slider section -->
+    <section id="products-slider" class="products-slider">
+        <div class="container-fluid">
+            <h3 class="products-slider__title">
+                This Week Trending Products
+            </h3>
+            <div class="products-slider__inner">
+                <!-- 1st slide -->
+                <div class="products__item mix category-psd category-new" data-order="8">
+                    <a href="#" class="products__item-img" style="background-image: url(images/content/product-item-designMockup.jpg)"></a>
+                    <div class="products__item-content d-flex justify-content-between align-items-center">
+                        <div class="products__item-name">
+                            <a href="#" class="products__item-title item-title">
+                                Responsive Mobile APP
+                            </a>
+                            <a href="#" class="products__item-category">
+                                Psd Template
+                            </a>
+                        </div>
+                        <div class="products__item-price">
+                            $19
+                        </div>
+                    </div>
+                    <div class="products__item-info d-flex justify-content-between">
+                        <a class="products__item-author d-flex align-items-center">
+                            <div class="avatar" style="background-image: url(images/content/user.jpg)"></div>
+                            <span>Radiustheme</span>    
+                        </a>
+                        <div class="products__item-stars">
+                            <div class="rate-star"></div>
+                            (<span>05</span>)
+                        </div>
+                    </div>
+                </div>
+
+                <div class="products__item mix category-psd category-new" data-order="8">
+                    <a href="#" class="products__item-img" style="background-image: url(images/content/product-item-mail.jpg)"></a>
+                    <div class="products__item-content d-flex justify-content-between align-items-center">
+                        <div class="products__item-name">
+                            <a href="#" class="products__item-title item-title">
+                                The Post Grid Pro
+                            </a>
+                            <a href="#" class="products__item-category">
+                                WordPress Plugin
+                            </a>
+                        </div>
+                        <div class="products__item-price">
+                            $15
+                        </div>
+                    </div>
+                    <div class="products__item-info d-flex justify-content-between">
+                        <a class="products__item-author d-flex align-items-center">
+                            <div class="avatar" style="background-image: url(images/content/user.jpg)"></div>
+                            <span>Radiustheme</span>    
+                        </a>
+                        <div class="products__item-stars">
+                            <div class="rate-star"></div>
+                            (<span>05</span>)
+                        </div>
+                    </div>
+                </div>
+
+                <div class="products__item mix category-psd category-new" data-order="8">
+                    <a href="#" class="products__item-img" style="background-image: url(images/content/product-item-snow.jpg)"></a>
+                    <div class="products__item-content d-flex justify-content-between align-items-center">
+                        <div class="products__item-name">
+                            <a href="#" class="products__item-title item-title">
+                                Logo Showcae
+                            </a>
+                            <a href="#" class="products__item-category">
+                                Joomla Component
+                            </a>
+                        </div>
+                        <div class="products__item-price">
+                            $20
+                        </div>
+                    </div>
+                    <div class="products__item-info d-flex justify-content-between">
+                        <a class="products__item-author d-flex align-items-center">
+                            <div class="avatar" style="background-image: url(images/content/user.jpg)"></div>
+                            <span>Radiustheme</span>    
+                        </a>
+                        <div class="products__item-stars">
+                            <div class="rate-star"></div>
+                            (<span>05</span>)
+                        </div>
+                    </div>
+                </div>
+                <div class="products__item mix category-psd category-new" data-order="8">
+                    <a href="#" class="products__item-img" style="background-image: url(images/content/product-item-git.jpg)"></a>
+                    <div class="products__item-content d-flex justify-content-between align-items-center">
+                        <div class="products__item-name">
+                            <a href="#" class="products__item-title item-title">
+                                UI Design
+                            </a>
+                            <a href="#" class="products__item-category">
+                                Psd Template
+                            </a>
+                        </div>
+                        <div class="products__item-price">
+                            $12
+                        </div>
+                    </div>
+                    <div class="products__item-info d-flex justify-content-between">
+                        <a class="products__item-author d-flex align-items-center">
+                            <div class="avatar" style="background-image: url(images/content/user.jpg)"></div>
+                            <span>Lolypop</span>    
+                        </a>
+                        <div class="products__item-stars">
+                            <div class="rate-star"></div>
+                            (<span>05</span>)
+                        </div>
+                    </div>
+                </div>
+                <!-- 2nd slide -->
+                <div class="products__item mix category-psd category-new" data-order="8">
+                    <a href="#" class="products__item-img" style="background-image: url(images/content/product-item-designMockup.jpg)"></a>
+                    <div class="products__item-content d-flex justify-content-between align-items-center">
+                        <div class="products__item-name">
+                            <a href="#" class="products__item-title item-title">
+                                Responsive Mobile APP
+                            </a>
+                            <a href="#" class="products__item-category">
+                                Psd Template
+                            </a>
+                        </div>
+                        <div class="products__item-price">
+                            $19
+                        </div>
+                    </div>
+                    <div class="products__item-info d-flex justify-content-between">
+                        <a class="products__item-author d-flex align-items-center">
+                            <div class="avatar" style="background-image: url(images/content/user.jpg)"></div>
+                            <span>Radiustheme</span>    
+                        </a>
+                        <div class="products__item-stars">
+                            <div class="rate-star"></div>
+                            (<span>05</span>)
+                        </div>
+                    </div>
+                </div>
+                <div class="products__item mix category-psd category-new" data-order="8">
+                    <a href="#" class="products__item-img" style="background-image: url(images/content/product-item-designMockup.jpg)"></a>
+                    <div class="products__item-content d-flex justify-content-between align-items-center">
+                        <div class="products__item-name">
+                            <a href="#" class="products__item-title item-title">
+                                Responsive Mobile APP
+                            </a>
+                            <a href="#" class="products__item-category">
+                                Psd Template
+                            </a>
+                        </div>
+                        <div class="products__item-price">
+                            $19
+                        </div>
+                    </div>
+                    <div class="products__item-info d-flex justify-content-between">
+                        <a class="products__item-author d-flex align-items-center">
+                            <div class="avatar" style="background-image: url(images/content/user.jpg)"></div>
+                            <span>Radiustheme</span>    
+                        </a>
+                        <div class="products__item-stars">
+                            <div class="rate-star"></div>
+                            (<span>05</span>)
+                        </div>
+                    </div>
+                </div>
+                <div class="products__item mix category-psd category-new" data-order="8">
+                    <a href="#" class="products__item-img" style="background-image: url(images/content/product-item-designMockup.jpg)"></a>
+                    <div class="products__item-content d-flex justify-content-between align-items-center">
+                        <div class="products__item-name">
+                            <a href="#" class="products__item-title item-title">
+                                Responsive Mobile APP
+                            </a>
+                            <a href="#" class="products__item-category">
+                                Psd Template
+                            </a>
+                        </div>
+                        <div class="products__item-price">
+                            $19
+                        </div>
+                    </div>
+                    <div class="products__item-info d-flex justify-content-between">
+                        <a class="products__item-author d-flex align-items-center">
+                            <div class="avatar" style="background-image: url(images/content/user.jpg)"></div>
+                            <span>Radiustheme</span>    
+                        </a>
+                        <div class="products__item-stars">
+                            <div class="rate-star"></div>
+                            (<span>05</span>)
+                        </div>
+                    </div>
+                </div>
+                <div class="products__item mix category-psd category-new" data-order="8">
+                    <a href="#" class="products__item-img" style="background-image: url(images/content/product-item-designMockup.jpg)"></a>
+                    <div class="products__item-content d-flex justify-content-between align-items-center">
+                        <div class="products__item-name">
+                            <a href="#" class="products__item-title item-title">
+                                Responsive Mobile APP
+                            </a>
+                            <a href="#" class="products__item-category">
+                                Psd Template
+                            </a>
+                        </div>
+                        <div class="products__item-price">
+                            $19
+                        </div>
+                    </div>
+                    <div class="products__item-info d-flex justify-content-between">
+                        <a class="products__item-author d-flex align-items-center">
+                            <div class="avatar" style="background-image: url(images/content/user.jpg)"></div>
+                            <span>Radiustheme</span>    
+                        </a>
+                        <div class="products__item-stars">
+                            <div class="rate-star"></div>
+                            (<span>05</span>)
+                        </div>
+                    </div>
+                </div>
+                <!-- 3rd slide -->
+                <div class="products__item mix category-psd category-new" data-order="8">
+                    <a href="#" class="products__item-img" style="background-image: url(images/content/product-item-designMockup.jpg)"></a>
+                    <div class="products__item-content d-flex justify-content-between align-items-center">
+                        <div class="products__item-name">
+                            <a href="#" class="products__item-title item-title">
+                                Responsive Mobile APP
+                            </a>
+                            <a href="#" class="products__item-category">
+                                Psd Template
+                            </a>
+                        </div>
+                        <div class="products__item-price">
+                            $19
+                        </div>
+                    </div>
+                    <div class="products__item-info d-flex justify-content-between">
+                        <a class="products__item-author d-flex align-items-center">
+                            <div class="avatar" style="background-image: url(images/content/user.jpg)"></div>
+                            <span>Radiustheme</span>    
+                        </a>
+                        <div class="products__item-stars">
+                            <div class="rate-star"></div>
+                            (<span>05</span>)
+                        </div>
+                    </div>
+                </div>
+                <div class="products__item mix category-psd category-new" data-order="8">
+                    <a href="#" class="products__item-img" style="background-image: url(images/content/product-item-designMockup.jpg)"></a>
+                    <div class="products__item-content d-flex justify-content-between align-items-center">
+                        <div class="products__item-name">
+                            <a href="#" class="products__item-title item-title">
+                                Responsive Mobile APP
+                            </a>
+                            <a href="#" class="products__item-category">
+                                Psd Template
+                            </a>
+                        </div>
+                        <div class="products__item-price">
+                            $19
+                        </div>
+                    </div>
+                    <div class="products__item-info d-flex justify-content-between">
+                        <a class="products__item-author d-flex align-items-center">
+                            <div class="avatar" style="background-image: url(images/content/user.jpg)"></div>
+                            <span>Radiustheme</span>    
+                        </a>
+                        <div class="products__item-stars">
+                            <div class="rate-star"></div>
+                            (<span>05</span>)
+                        </div>
+                    </div>
+                </div>
+                <div class="products__item mix category-psd category-new" data-order="8">
+                    <a href="#" class="products__item-img" style="background-image: url(images/content/product-item-designMockup.jpg)"></a>
+                    <div class="products__item-content d-flex justify-content-between align-items-center">
+                        <div class="products__item-name">
+                            <a href="#" class="products__item-title item-title">
+                                Responsive Mobile APP
+                            </a>
+                            <a href="#" class="products__item-category">
+                                Psd Template
+                            </a>
+                        </div>
+                        <div class="products__item-price">
+                            $19
+                        </div>
+                    </div>
+                    <div class="products__item-info d-flex justify-content-between">
+                        <a class="products__item-author d-flex align-items-center">
+                            <div class="avatar" style="background-image: url(images/content/user.jpg)"></div>
+                            <span>Radiustheme</span>    
+                        </a>
+                        <div class="products__item-stars">
+                            <div class="rate-star"></div>
+                            (<span>05</span>)
+                        </div>
+                    </div>
+                </div>
+                <div class="products__item mix category-psd category-new" data-order="8">
+                    <a href="#" class="products__item-img" style="background-image: url(images/content/product-item-designMockup.jpg)"></a>
+                    <div class="products__item-content d-flex justify-content-between align-items-center">
+                        <div class="products__item-name">
+                            <a href="#" class="products__item-title item-title">
+                                Responsive Mobile APP
+                            </a>
+                            <a href="#" class="products__item-category">
+                                Psd Template
+                            </a>
+                        </div>
+                        <div class="products__item-price">
+                            $19
+                        </div>
+                    </div>
+                    <div class="products__item-info d-flex justify-content-between">
+                        <a class="products__item-author d-flex align-items-center">
+                            <div class="avatar" style="background-image: url(images/content/user.jpg)"></div>
+                            <span>Radiustheme</span>    
+                        </a>
+                        <div class="products__item-stars">
+                            <div class="rate-star"></div>
+                            (<span>05</span>)
+                        </div>
+                    </div>
+                </div>
+                <!-- 4th slide -->
+                <div class="products__item mix category-psd category-new" data-order="8">
+                    <a href="#" class="products__item-img" style="background-image: url(images/content/product-item-designMockup.jpg)"></a>
+                    <div class="products__item-content d-flex justify-content-between align-items-center">
+                        <div class="products__item-name">
+                            <a href="#" class="products__item-title item-title">
+                                Responsive Mobile APP
+                            </a>
+                            <a href="#" class="products__item-category">
+                                Psd Template
+                            </a>
+                        </div>
+                        <div class="products__item-price">
+                            $19
+                        </div>
+                    </div>
+                    <div class="products__item-info d-flex justify-content-between">
+                        <a class="products__item-author d-flex align-items-center">
+                            <div class="avatar" style="background-image: url(images/content/user.jpg)"></div>
+                            <span>Radiustheme</span>    
+                        </a>
+                        <div class="products__item-stars">
+                            <div class="rate-star"></div>
+                            (<span>05</span>)
+                        </div>
+                    </div>
+                </div>
+                <div class="products__item mix category-psd category-new" data-order="8">
+                    <a href="#" class="products__item-img" style="background-image: url(images/content/product-item-designMockup.jpg)"></a>
+                    <div class="products__item-content d-flex justify-content-between align-items-center">
+                        <div class="products__item-name">
+                            <a href="#" class="products__item-title item-title">
+                                Responsive Mobile APP
+                            </a>
+                            <a href="#" class="products__item-category">
+                                Psd Template
+                            </a>
+                        </div>
+                        <div class="products__item-price">
+                            $19
+                        </div>
+                    </div>
+                    <div class="products__item-info d-flex justify-content-between">
+                        <a class="products__item-author d-flex align-items-center">
+                            <div class="avatar" style="background-image: url(images/content/user.jpg)"></div>
+                            <span>Radiustheme</span>    
+                        </a>
+                        <div class="products__item-stars">
+                            <div class="rate-star"></div>
+                            (<span>05</span>)
+                        </div>
+                    </div>
+                </div>
+                <div class="products__item mix category-psd category-new" data-order="8">
+                    <a href="#" class="products__item-img" style="background-image: url(images/content/product-item-designMockup.jpg)"></a>
+                    <div class="products__item-content d-flex justify-content-between align-items-center">
+                        <div class="products__item-name">
+                            <a href="#" class="products__item-title item-title">
+                                Responsive Mobile APP
+                            </a>
+                            <a href="#" class="products__item-category">
+                                Psd Template
+                            </a>
+                        </div>
+                        <div class="products__item-price">
+                            $19
+                        </div>
+                    </div>
+                    <div class="products__item-info d-flex justify-content-between">
+                        <a class="products__item-author d-flex align-items-center">
+                            <div class="avatar" style="background-image: url(images/content/user.jpg)"></div>
+                            <span>Radiustheme</span>    
+                        </a>
+                        <div class="products__item-stars">
+                            <div class="rate-star"></div>
+                            (<span>05</span>)
+                        </div>
+                    </div>
+                </div>
+                <div class="products__item mix category-psd category-new" data-order="8">
+                    <a href="#" class="products__item-img" style="background-image: url(images/content/product-item-designMockup.jpg)"></a>
+                    <div class="products__item-content d-flex justify-content-between align-items-center">
+                        <div class="products__item-name">
+                            <a href="#" class="products__item-title item-title">
+                                Responsive Mobile APP
+                            </a>
+                            <a href="#" class="products__item-category">
+                                Psd Template
+                            </a>
+                        </div>
+                        <div class="products__item-price">
+                            $19
+                        </div>
+                    </div>
+                    <div class="products__item-info d-flex justify-content-between">
+                        <a class="products__item-author d-flex align-items-center">
+                            <div class="avatar" style="background-image: url(images/content/user.jpg)"></div>
+                            <span>Radiustheme</span>    
+                        </a>
+                        <div class="products__item-stars">
+                            <div class="rate-star"></div>
+                            (<span>05</span>)
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end products-slider section -->
+
+    <!-- start advantages section -->
+    <section class="advantages">
+        <div class="container">
+            <div class="advantages__inner">
+                <h3 class="advantages__inner-title">
+                    Why You Choose Foxtar Market Place?
+                </h3>
+                <div class="advantages__inner-items d-flex justify-content-between">
+                    <div class="advantages__item">
+                        <div class="advantages__item-img icosvg-1">
+                            <svg role="img" xmlns="http://www.w3.org/2000/svg" width="60px" height="77px" viewBox="0 0 24 24" aria-labelledby="lockIconTitle" stroke="#000" stroke-width="2.625" stroke-linecap="square" stroke-linejoin="miter" fill="#0098f9" color="#000"> <title id="lockIconTitle">Lock</title> <rect width="14" height="10" x="5" y="11"/> <path d="M12,3 L12,3 C14.7614237,3 17,5.23857625 17,8 L17,11 L7,11 L7,8 C7,5.23857625 9.23857625,3 12,3 Z"/></svg>
+                        </div>
+                        <div class="advantages__item-title">
+                            Easily Buy & Sell
+                        </div>
+                        <div class="advantages__item-txt">
+                            Lorem Ipsum is simply dummy text of the pring and typesetting industry. Lorem Ipsum has been the industry's standaum.
+                        </div>
+                    </div>
+                    <div class="advantages__item">
+                        <div class="advantages__item-img icosvg-2">
+                            <svg width="72px" height="72px" viewBox="0 0 24 24" fill="#ffdf2f" xmlns="http://www.w3.org/2000/svg" aria-labelledby="flowerIconTitle" stroke="#000" stroke-width="1.3333333333333333" stroke-linecap="square" stroke-linejoin="miter" color="#000"> <title id="flowerIconTitle">Flower</title> <path d="M12 22C13.5819 22 14.8778 20.7757 14.9918 19.223C16.1704 20.2403 17.9525 20.1896 19.0711 19.0711C20.1896 17.9525 20.2402 16.1705 19.2229 14.9918C20.7757 14.8778 22 13.5819 22 12C22 10.4181 20.7757 9.12224 19.223 9.00816C20.2403 7.82955 20.1896 6.04748 19.0711 4.92894C17.9525 3.81038 16.1705 3.75976 14.9918 4.77708C14.8778 3.22433 13.5819 2 12 2C10.4181 2 9.12224 3.22431 9.00816 4.77704C7.82955 3.75974 6.04749 3.81036 4.92894 4.92891C3.81038 6.04747 3.75977 7.82955 4.77708 9.00816C3.22433 9.12221 2 10.4181 2 12C2 13.5819 3.2243 14.8778 4.77703 14.9918C3.75974 16.1704 3.81037 17.9525 4.92891 19.0711C6.04747 20.1896 7.82955 20.2402 9.00816 19.2229C9.12221 20.7757 10.4181 22 12 22Z"/> <path d="M12 14C10.8954 14 10 13.1046 10 12C10 10.8954 10.8954 10 12 10C13.1046 10 14 10.8954 14 12C14 13.1046 13.1046 14 12 14Z"/></svg>
+                        </div>
+                        <div class="advantages__item-title">
+                            Quality Products
+                        </div>
+                        <div class="advantages__item-txt">
+                            Lorem Ipsum is simply dummy text of the pring and typesetting industry. Lorem Ipsum has been the industry's standaum.
+                        </div>
+                    </div>
+                    <div class="advantages__item">
+                        <div class="advantages__item-img icosvg-3">
+                            <svg role="img" xmlns="http://www.w3.org/2000/svg" width="85px" height="75px" viewBox="0 0 24 24" aria-labelledby="favouriteIconTitle" stroke="#000" stroke-width="2.6666666666666665" stroke-linecap="round" stroke-linejoin="round" fill="#cc0b59" color="#000"> <title id="favouriteIconTitle">Favourite</title> <path d="M12,21 L10.55,19.7051771 C5.4,15.1242507 2,12.1029973 2,8.39509537 C2,5.37384196 4.42,3 7.5,3 C9.24,3 10.91,3.79455041 12,5.05013624 C13.09,3.79455041 14.76,3 16.5,3 C19.58,3 22,5.37384196 22,8.39509537 C22,12.1029973 18.6,15.1242507 13.45,19.7149864 L12,21 Z"/></svg>
+                        </div>
+                        <div class="advantages__item-title">
+                        100% Secure Payment
+                        </div>
+                        <div class="advantages__item-txt">
+                            Lorem Ipsum is simply dummy text of the pring and typesetting industry. Lorem Ipsum has been the industry's standaum.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end advantages section -->
+    <!-- start author section -->
+
+    <section id="author" class="author d-flex align-items-center" style="background-image: url(images/bg-people.jpg)">
+        <div class="author__item d-flex align-items-center">
+            <h4 class="author__item-title">
+                Over <span>20,000</span> Author 
+                Are Involved Here!
+            </h4>
+            <a class="author__item-link" href="#">Become an Author</a>
+        </div>
+    </section>
+
+    <!-- end author section -->
+    <!-- start tutorial section -->
+    <section id="tutorial" class="tutorial">
+        <div class="container">
+            <h3 class="tutorial__title">
+                Free Monthly Tutorials To Help You With Your Project 
+            </h3>
+            <div class="tutorial__inner d-flex justify-content-between">
+                <div class="tutorial__item">
+                    <a href="#" class="tutorial__item-img" style="background-image: url(images/content/tutorial1.jpg);"></a>
+                    <a href="#" class="tutorial__item-title">
+                        Web Design Tutorials
                     </a>
-                    <div class="user-menu">
-                        <ul>
-                            <li><a class="angle-right" href="#">Profile Page</a></li>
-                            <li><a class="angle-right" href="#">Portfolio</a></li>
-                            <li><a class="angle-right" href="#">Account Setting</a></li>
-                            <li><a class="angle-right" href="#">Downloads</a></li>
-                            <li><a class="angle-right" href="#">Wishlist</a></li>
-                            <li><a class="angle-right" href="#">Upload Item</a></li>
-                            <li><a class="angle-right" href="#">Statement</a></li>
-                            <li><a class="angle-right" href="#">Withdraws</a></li>
+                </div>
+                <div class="tutorial__item">
+                    <a href="#" class="tutorial__item-img" style="background-image: url(images/content/product-item-wordpress.jpg)"></a>
+                    <a href="#" class="tutorial__item-title">
+                        WordPress Tutorials
+                    </a>
+                </div>
+                <div class="tutorial__item">
+                    <a href="#" class="tutorial__item-img" style="background-image: url(images/content/tutorial3.jpg)"></a>
+                    <a href="#" class="tutorial__item-title">
+                        HTML & CSS Tutorials
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end tutorial section -->
+    <!-- </div> -->
+    <!-- end product-page content -->
+    <!-- end div "content" -->
+    </div>
+    <!-- start footer -->
+    <footer id="footer" class="footer">
+        <div class="footer__content">
+            <div class="container">
+                <div class="footer__wrapper d-flex justify-content-between">
+                    <div class="footer__col footer__col-about">   
+                        <div class="footer__col-title">
+                            About Company
+                        </div>
+                        <p class="footer__col-txt">
+                            Praesent vel rutrum purus. Nam vel dui eu risus duis dignissim digni Suspen disse. Fusce sit amet urna iat. Praesent vel rutrum purus. 
+                        </p>
+                        <a class="footer__col-contacts footer__col-adress" href="https://goo.gl/maps/L4H7DvEvhGAfK7ds6">
+                            PO Box 16122 Collins Street West Victoria 8007 Australia
+                        </a>
+                        <a class="footer__col-contacts footer__col-phone" href="tel:+61383766284">+61 383766284</a>
+                    </div>
+                    <div class="footer__col footer__col-menu"> 
+                        <div class="footer__col-title">
+                            Join Our Community
+                        </div>
+                        <ul class="footer__col-list">
+                            <li>
+                                <a href="#">Home</a>
+                                <a href="#">Forums</a>
+                                <a href="#">Become An Author</a>
+                                <a href="#">Community Meetups</a>
+                                <a href="#">Become An Affiliate</a>
+                            </li>
                         </ul>
                     </div>
-                </div>
-                    <a href="#" class="header__btn header__btn-log header__btn-log--off">Login</a>
-                    <a href="#" class="header__btn header__btn-logout header__btn-logout-on">Logout</a>
-                    <a href="#" class="header__btn header__btn-reg header__btn-log--off">Register</a>
-                </div>
-            </div>
-        </div> 
-    </div>
-    <div class="header__menu">
-        <div class="container">
-            <nav class="menu d-flex justify-content-between align-items-center">
-                <ul class="menu__list">               
-                    <li>
-                        <a href="#">
-                            Home
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            About
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            WordPress 
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            Joomla
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            PSD
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            Plugins
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            Components
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            Pages
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            Contact
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            Help
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </div>
-</header>
-<!-- end header -->
-<!-- start search section -->
-<section class="search" style="background-image: url(images/bg-green-1page.jpg)">
-    <div class="container">
-        <div class="search__inner">
-            <h1 class="search__inner-title">
-                Welcome To Foxtar Market Place!
-            </h1>
-            <div class="search__inner-txt">
-                Premium WordPress Themes, Web Templates and Many More &#8230
-            </div>
-            <div class="search__inner-form">
-                <form class="search__form" action="">
-                    <input type="text" placeholder="Search Your Keywords &#8230" required>
-                    <button type="submit">
-                        <img src="images/icons/search.svg" alt="">
-                    </button>
-                </form>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- end search section -->
-<!-- start products section -->
-<section id="products" class="products">
-    <div class="container-fluid">
-           <h3 class="products__title">
-                Let’s Check Out Our Newest Release Products
-            </h3>
-            <div class="products__inner">
-                <div class="products__inner-btn">
-                    <button type="button" data-filter="all">All</button>
-                    <button type="button" data-filter=".category-wordpress">Wordpress</button>
-                    <button type="button" data-filter=".category-joomla">Joomla</button>
-                    <button type="button" data-filter=".category-plugins">Plugins</button>
-                    <button type="button" data-filter=".category-component">Component</button>
-                    <button type="button" data-filter=".category-psd">PSD</button>
-                </div>
-            </div> 
-    
-        <div class="products__box d-flex">
-            <div class="products__item mix category-component category-popular" data-order="1">
-                <a href="#" class="products__item-img" style="background-image: url(images/content/product-item-mobileApp.jpg)"></a>
-                <div class="products__item-content d-flex justify-content-between align-items-center">
-                    <div class="products__item-name">
-                        <a href="#" class="products__item-title item-title">
-                            Responsive Mobile APP
-                        </a>
-                        <a href="#" class="products__item-category">
-                            Site Template
-                        </a>
-                    </div>
-                    <div class="products__item-price">
-                        $19
-                    </div>
-                </div>
-                <div class="products__item-info d-flex justify-content-between">
-                    <a class="products__item-author d-flex align-items-center">
-                        <div class="avatar" style="background-image: url(images/content/user.jpg)"></div>
-                        <span>Radiustheme</span>    
-                    </a>
-                    <div class="products__item-stars">
-                        <div class="rate-star"></div>
-                        (<span>05</span>)
-                    </div>
-                </div>
-            </div>
-            <div class="products__item mix category-wordpress category-popular" data-order="2">
-                <a href="#" class="products__item-img" style="background-image: url(images/content/product-item-Apple.jpg)"></a>
-                <div class="products__item-content d-flex justify-content-between align-items-center">
-                    <div class="products__item-name">
-                        <a href="#" class="products__item-title item-title">
-                            The Post Grid Pro
-                        </a>
-                        <a href="#" class="products__item-category">
-                            WordPress Plugin
-                        </a>
-                    </div>
-                    <div class="products__item-price">
-                        $15
-                    </div>
-                </div>
-                <div class="products__item-info d-flex justify-content-between">
-                    <a class="products__item-author d-flex align-items-center">
-                        <div class="avatar" style="background-image: url(images/content/user.jpg)"></div>
-                        <span>PSDbossD</span>    
-                    </a>
-                    <div class="products__item-stars">
-                        <div class="rate-star"></div>
-                        (<span>05</span>)
-                    </div>
-                </div>
-            </div>
-            <div class="products__item mix category-wordpress category-plugins category-popular" data-order="3">
-                <a href="#" class="products__item-img" style="background-image: url(images/content/product-item-wordpress.jpg)"></a>
-                <div class="products__item-content d-flex justify-content-between align-items-center">
-                    <div class="products__item-name">
-                        <a href="#" class="products__item-title item-title">
-                            Food Menu
-                        </a>
-                        <a href="#" class="products__item-category">
-                            WordPress Plugin
-                        </a>
-                    </div>
-                    <div class="products__item-price">
-                        $20
-                    </div>
-                </div>
-                <div class="products__item-info d-flex justify-content-between">
-                    <a class="products__item-author d-flex align-items-center">
-                        <div class="avatar" style="background-image: url(images/content/user.jpg)"></div>
-                        <span>Marillip</span>    
-                    </a>
-                    <div class="products__item-stars">
-                        <div class="rate-star"></div>
-                        (<span>05</span>)
-                    </div>
-                </div>
-            </div>
-            <div class="products__item mix category-psd category-new" data-order="4">
-                <a href="#" class="products__item-img" style="background-image: url(images/content/product-item-4.jpg)"></a>
-                <div class="products__item-content d-flex justify-content-between align-items-center">
-                    <div class="products__item-name">
-                        <a href="#" class="products__item-title item-title">
-                            Imac Mockup
-                        </a>
-                        <a href="#" class="products__item-category">
-                            PSD Template
-                        </a>
-                    </div>
-                    <div class="products__item-price">
-                        $12
-                    </div>
-                </div>
-                <div class="products__item-info d-flex justify-content-between">
-                    <a class="products__item-author d-flex align-items-center">
-                        <div class="avatar" style="background-image: url(images/content/user.jpg)"></div>
-                        <span>Lollypop</span>    
-                    </a>
-                    <div class="products__item-stars">
-                        <div class="rate-star"></div>
-                        (<span>05</span>)
-                    </div>
-                </div>
-            </div>
-
-            <div class="products__item mix category-joomla category-new" data-order="5">
-                <a href="#" class="products__item-img" style="background-image: url(images/content/product-item-gymedge.jpg)"></a>
-                <div class="products__item-content d-flex justify-content-between align-items-center">
-                    <div class="products__item-name">
-                        <a href="#" class="products__item-title item-title">
-                            Gymedge
-                        </a>
-                        <a href="#" class="products__item-category">
-                            Joomla Template
-                        </a>
-                    </div>
-                    <div class="products__item-price">
-                        $45
-                    </div>
-                </div>
-                <div class="products__item-info d-flex justify-content-between">
-                    <a class="products__item-author d-flex align-items-center">
-                        <div class="avatar" style="background-image: url(images/content/user.jpg)"></div>
-                        <span>Micrsof</span>    
-                    </a>
-                    <div class="products__item-stars">
-                        <div class="rate-star"></div>
-                        (<span>05</span>)
-                    </div>
-                </div>
-            </div>
-
-            <div class="products__item mix category-plugins category-new" data-order="6">
-                <a href="#" class="products__item-img" style="background-image: url(images/content/product-item-dollface.jpg)"></a>
-                <div class="products__item-content d-flex justify-content-between align-items-center">
-                    <div class="products__item-name">
-                        <a href="#" class="products__item-title item-title">
-                            The Post Grid Pro
-                        </a>
-                        <a href="#" class="products__item-category">
-                            WordPress Plugin
-                        </a>
-                    </div>
-                    <div class="products__item-price">
-                        $19
-                    </div>
-                </div>
-                <div class="products__item-info d-flex justify-content-between">
-                    <a class="products__item-author d-flex align-items-center">
-                        <div class="avatar" style="background-image: url(images/content/user.jpg)"></div>
-                        <span>Racklous</span>    
-                    </a>
-                    <div class="products__item-stars">
-                        <div class="rate-star"></div>
-                        (<span>05</span>)
-                    </div>
-                </div>
-            </div>
-
-            <div class="products__item mix category-plugins category-component category-popular" data-order="7">
-                <a href="#" class="products__item-img" style="background-image: url(images/content/product-item-gridproBlue.jpg)"></a>
-                <div class="products__item-content d-flex justify-content-between align-items-center">
-                    <div class="products__item-name">
-                        <a href="#" class="products__item-title item-title">
-                            Responsive Mobile APP
-                        </a>
-                        <a href="#" class="products__item-category">
-                            Site Template
-                        </a>
-                    </div>
-                    <div class="products__item-price">
-                        $19
-                    </div>
-                </div>
-                <div class="products__item-info d-flex justify-content-between">
-                    <a class="products__item-author d-flex align-items-center">
-                        <div class="avatar" style="background-image: url(images/content/user.jpg)"></div>
-                        <span>Radiustheme</span>    
-                    </a>
-                    <div class="products__item-stars">
-                       <div class="rate-star"></div>
-                       (<span>05</span>)
-                    </div>
-                </div>
-            </div>
-            <div class="products__item mix category-psd category-new" data-order="8">
-                <a href="#" class="products__item-img" style="background-image: url(images/content/product-item-designMockup.jpg)"></a>
-                <div class="products__item-content d-flex justify-content-between align-items-center">
-                    <div class="products__item-name">
-                        <a href="#" class="products__item-title item-title">
-                            Responsive Mobile APP
-                        </a>
-                        <a href="#" class="products__item-category">
-                            Psd Template
-                        </a>
-                    </div>
-                    <div class="products__item-price">
-                        $19
-                    </div>
-                </div>
-                <div class="products__item-info d-flex justify-content-between">
-                    <a class="products__item-author d-flex align-items-center">
-                        <div class="avatar" style="background-image: url(images/content/user.jpg)"></div>
-                        <span>Radiustheme</span>    
-                    </a>
-                    <div class="products__item-stars">
-                        <div class="rate-star"></div>
-                        (<span>05</span>)
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="products__bottom-btn">
-            <button type="button" data-filter=".category-new">All new items</button>
-            <button type="button" data-filter=".category-popular">Popular Items</button>
-        </div>
-    </div>
-</section>
-<!-- end products section -->
-<!-- start products-slider section -->
-<section id="products-slider" class="products-slider">
-    <div class="container-fluid">
-        <h3 class="products-slider__title">
-            This Week Trending Products
-        </h3>
-        <div class="products-slider__inner">
-            <!-- 1st slide -->
-            <div class="products__item mix category-psd category-new" data-order="8">
-                <a href="#" class="products__item-img" style="background-image: url(images/content/product-item-designMockup.jpg)"></a>
-                <div class="products__item-content d-flex justify-content-between align-items-center">
-                    <div class="products__item-name">
-                        <a href="#" class="products__item-title item-title">
-                            Responsive Mobile APP
-                        </a>
-                        <a href="#" class="products__item-category">
-                            Psd Template
-                        </a>
-                    </div>
-                    <div class="products__item-price">
-                        $19
-                    </div>
-                </div>
-                <div class="products__item-info d-flex justify-content-between">
-                    <a class="products__item-author d-flex align-items-center">
-                        <div class="avatar" style="background-image: url(images/content/user.jpg)"></div>
-                        <span>Radiustheme</span>    
-                    </a>
-                    <div class="products__item-stars">
-                        <div class="rate-star"></div>
-                        (<span>05</span>)
-                    </div>
-                </div>
-            </div>
-
-            <div class="products__item mix category-psd category-new" data-order="8">
-                <a href="#" class="products__item-img" style="background-image: url(images/content/product-item-mail.jpg)"></a>
-                <div class="products__item-content d-flex justify-content-between align-items-center">
-                    <div class="products__item-name">
-                        <a href="#" class="products__item-title item-title">
-                            The Post Grid Pro
-                        </a>
-                        <a href="#" class="products__item-category">
-                            WordPress Plugin
-                        </a>
-                    </div>
-                    <div class="products__item-price">
-                        $15
-                    </div>
-                </div>
-                <div class="products__item-info d-flex justify-content-between">
-                    <a class="products__item-author d-flex align-items-center">
-                        <div class="avatar" style="background-image: url(images/content/user.jpg)"></div>
-                        <span>Radiustheme</span>    
-                    </a>
-                    <div class="products__item-stars">
-                        <div class="rate-star"></div>
-                        (<span>05</span>)
-                    </div>
-                </div>
-            </div>
-
-            <div class="products__item mix category-psd category-new" data-order="8">
-                <a href="#" class="products__item-img" style="background-image: url(images/content/product-item-snow.jpg)"></a>
-                <div class="products__item-content d-flex justify-content-between align-items-center">
-                    <div class="products__item-name">
-                        <a href="#" class="products__item-title item-title">
-                            Logo Showcae
-                        </a>
-                        <a href="#" class="products__item-category">
-                            Joomla Component
-                        </a>
-                    </div>
-                    <div class="products__item-price">
-                        $20
-                    </div>
-                </div>
-                <div class="products__item-info d-flex justify-content-between">
-                    <a class="products__item-author d-flex align-items-center">
-                        <div class="avatar" style="background-image: url(images/content/user.jpg)"></div>
-                        <span>Radiustheme</span>    
-                    </a>
-                    <div class="products__item-stars">
-                        <div class="rate-star"></div>
-                        (<span>05</span>)
-                    </div>
-                </div>
-            </div>
-            <div class="products__item mix category-psd category-new" data-order="8">
-                <a href="#" class="products__item-img" style="background-image: url(images/content/product-item-git.jpg)"></a>
-                <div class="products__item-content d-flex justify-content-between align-items-center">
-                    <div class="products__item-name">
-                        <a href="#" class="products__item-title item-title">
-                            UI Design
-                        </a>
-                        <a href="#" class="products__item-category">
-                            Psd Template
-                        </a>
-                    </div>
-                    <div class="products__item-price">
-                        $12
-                    </div>
-                </div>
-                <div class="products__item-info d-flex justify-content-between">
-                    <a class="products__item-author d-flex align-items-center">
-                        <div class="avatar" style="background-image: url(images/content/user.jpg)"></div>
-                        <span>Lolypop</span>    
-                    </a>
-                    <div class="products__item-stars">
-                        <div class="rate-star"></div>
-                        (<span>05</span>)
-                    </div>
-                </div>
-            </div>
-            <!-- 2nd slide -->
-            <div class="products__item mix category-psd category-new" data-order="8">
-                <a href="#" class="products__item-img" style="background-image: url(images/content/product-item-designMockup.jpg)"></a>
-                <div class="products__item-content d-flex justify-content-between align-items-center">
-                    <div class="products__item-name">
-                        <a href="#" class="products__item-title item-title">
-                            Responsive Mobile APP
-                        </a>
-                        <a href="#" class="products__item-category">
-                            Psd Template
-                        </a>
-                    </div>
-                    <div class="products__item-price">
-                        $19
-                    </div>
-                </div>
-                <div class="products__item-info d-flex justify-content-between">
-                    <a class="products__item-author d-flex align-items-center">
-                        <div class="avatar" style="background-image: url(images/content/user.jpg)"></div>
-                        <span>Radiustheme</span>    
-                    </a>
-                    <div class="products__item-stars">
-                        <div class="rate-star"></div>
-                        (<span>05</span>)
-                    </div>
-                </div>
-            </div>
-            <div class="products__item mix category-psd category-new" data-order="8">
-                <a href="#" class="products__item-img" style="background-image: url(images/content/product-item-designMockup.jpg)"></a>
-                <div class="products__item-content d-flex justify-content-between align-items-center">
-                    <div class="products__item-name">
-                        <a href="#" class="products__item-title item-title">
-                            Responsive Mobile APP
-                        </a>
-                        <a href="#" class="products__item-category">
-                            Psd Template
-                        </a>
-                    </div>
-                    <div class="products__item-price">
-                        $19
-                    </div>
-                </div>
-                <div class="products__item-info d-flex justify-content-between">
-                    <a class="products__item-author d-flex align-items-center">
-                        <div class="avatar" style="background-image: url(images/content/user.jpg)"></div>
-                        <span>Radiustheme</span>    
-                    </a>
-                    <div class="products__item-stars">
-                        <div class="rate-star"></div>
-                        (<span>05</span>)
-                    </div>
-                </div>
-            </div>
-            <div class="products__item mix category-psd category-new" data-order="8">
-                <a href="#" class="products__item-img" style="background-image: url(images/content/product-item-designMockup.jpg)"></a>
-                <div class="products__item-content d-flex justify-content-between align-items-center">
-                    <div class="products__item-name">
-                        <a href="#" class="products__item-title item-title">
-                            Responsive Mobile APP
-                        </a>
-                        <a href="#" class="products__item-category">
-                            Psd Template
-                        </a>
-                    </div>
-                    <div class="products__item-price">
-                        $19
-                    </div>
-                </div>
-                <div class="products__item-info d-flex justify-content-between">
-                    <a class="products__item-author d-flex align-items-center">
-                        <div class="avatar" style="background-image: url(images/content/user.jpg)"></div>
-                        <span>Radiustheme</span>    
-                    </a>
-                    <div class="products__item-stars">
-                        <div class="rate-star"></div>
-                        (<span>05</span>)
-                    </div>
-                </div>
-            </div>
-            <div class="products__item mix category-psd category-new" data-order="8">
-                <a href="#" class="products__item-img" style="background-image: url(images/content/product-item-designMockup.jpg)"></a>
-                <div class="products__item-content d-flex justify-content-between align-items-center">
-                    <div class="products__item-name">
-                        <a href="#" class="products__item-title item-title">
-                            Responsive Mobile APP
-                        </a>
-                        <a href="#" class="products__item-category">
-                            Psd Template
-                        </a>
-                    </div>
-                    <div class="products__item-price">
-                        $19
-                    </div>
-                </div>
-                <div class="products__item-info d-flex justify-content-between">
-                    <a class="products__item-author d-flex align-items-center">
-                        <div class="avatar" style="background-image: url(images/content/user.jpg)"></div>
-                        <span>Radiustheme</span>    
-                    </a>
-                    <div class="products__item-stars">
-                        <div class="rate-star"></div>
-                        (<span>05</span>)
-                    </div>
-                </div>
-            </div>
-            <!-- 3rd slide -->
-            <div class="products__item mix category-psd category-new" data-order="8">
-                <a href="#" class="products__item-img" style="background-image: url(images/content/product-item-designMockup.jpg)"></a>
-                <div class="products__item-content d-flex justify-content-between align-items-center">
-                    <div class="products__item-name">
-                        <a href="#" class="products__item-title item-title">
-                            Responsive Mobile APP
-                        </a>
-                        <a href="#" class="products__item-category">
-                            Psd Template
-                        </a>
-                    </div>
-                    <div class="products__item-price">
-                        $19
-                    </div>
-                </div>
-                <div class="products__item-info d-flex justify-content-between">
-                    <a class="products__item-author d-flex align-items-center">
-                        <div class="avatar" style="background-image: url(images/content/user.jpg)"></div>
-                        <span>Radiustheme</span>    
-                    </a>
-                    <div class="products__item-stars">
-                        <div class="rate-star"></div>
-                        (<span>05</span>)
-                    </div>
-                </div>
-            </div>
-            <div class="products__item mix category-psd category-new" data-order="8">
-                <a href="#" class="products__item-img" style="background-image: url(images/content/product-item-designMockup.jpg)"></a>
-                <div class="products__item-content d-flex justify-content-between align-items-center">
-                    <div class="products__item-name">
-                        <a href="#" class="products__item-title item-title">
-                            Responsive Mobile APP
-                        </a>
-                        <a href="#" class="products__item-category">
-                            Psd Template
-                        </a>
-                    </div>
-                    <div class="products__item-price">
-                        $19
-                    </div>
-                </div>
-                <div class="products__item-info d-flex justify-content-between">
-                    <a class="products__item-author d-flex align-items-center">
-                        <div class="avatar" style="background-image: url(images/content/user.jpg)"></div>
-                        <span>Radiustheme</span>    
-                    </a>
-                    <div class="products__item-stars">
-                        <div class="rate-star"></div>
-                        (<span>05</span>)
-                    </div>
-                </div>
-            </div>
-            <div class="products__item mix category-psd category-new" data-order="8">
-                <a href="#" class="products__item-img" style="background-image: url(images/content/product-item-designMockup.jpg)"></a>
-                <div class="products__item-content d-flex justify-content-between align-items-center">
-                    <div class="products__item-name">
-                        <a href="#" class="products__item-title item-title">
-                            Responsive Mobile APP
-                        </a>
-                        <a href="#" class="products__item-category">
-                            Psd Template
-                        </a>
-                    </div>
-                    <div class="products__item-price">
-                        $19
-                    </div>
-                </div>
-                <div class="products__item-info d-flex justify-content-between">
-                    <a class="products__item-author d-flex align-items-center">
-                        <div class="avatar" style="background-image: url(images/content/user.jpg)"></div>
-                        <span>Radiustheme</span>    
-                    </a>
-                    <div class="products__item-stars">
-                        <div class="rate-star"></div>
-                        (<span>05</span>)
-                    </div>
-                </div>
-            </div>
-            <div class="products__item mix category-psd category-new" data-order="8">
-                <a href="#" class="products__item-img" style="background-image: url(images/content/product-item-designMockup.jpg)"></a>
-                <div class="products__item-content d-flex justify-content-between align-items-center">
-                    <div class="products__item-name">
-                        <a href="#" class="products__item-title item-title">
-                            Responsive Mobile APP
-                        </a>
-                        <a href="#" class="products__item-category">
-                            Psd Template
-                        </a>
-                    </div>
-                    <div class="products__item-price">
-                        $19
-                    </div>
-                </div>
-                <div class="products__item-info d-flex justify-content-between">
-                    <a class="products__item-author d-flex align-items-center">
-                        <div class="avatar" style="background-image: url(images/content/user.jpg)"></div>
-                        <span>Radiustheme</span>    
-                    </a>
-                    <div class="products__item-stars">
-                        <div class="rate-star"></div>
-                        (<span>05</span>)
-                    </div>
-                </div>
-            </div>
-            <!-- 4th slide -->
-            <div class="products__item mix category-psd category-new" data-order="8">
-                <a href="#" class="products__item-img" style="background-image: url(images/content/product-item-designMockup.jpg)"></a>
-                <div class="products__item-content d-flex justify-content-between align-items-center">
-                    <div class="products__item-name">
-                        <a href="#" class="products__item-title item-title">
-                            Responsive Mobile APP
-                        </a>
-                        <a href="#" class="products__item-category">
-                            Psd Template
-                        </a>
-                    </div>
-                    <div class="products__item-price">
-                        $19
-                    </div>
-                </div>
-                <div class="products__item-info d-flex justify-content-between">
-                    <a class="products__item-author d-flex align-items-center">
-                        <div class="avatar" style="background-image: url(images/content/user.jpg)"></div>
-                        <span>Radiustheme</span>    
-                    </a>
-                    <div class="products__item-stars">
-                        <div class="rate-star"></div>
-                        (<span>05</span>)
-                    </div>
-                </div>
-            </div>
-            <div class="products__item mix category-psd category-new" data-order="8">
-                <a href="#" class="products__item-img" style="background-image: url(images/content/product-item-designMockup.jpg)"></a>
-                <div class="products__item-content d-flex justify-content-between align-items-center">
-                    <div class="products__item-name">
-                        <a href="#" class="products__item-title item-title">
-                            Responsive Mobile APP
-                        </a>
-                        <a href="#" class="products__item-category">
-                            Psd Template
-                        </a>
-                    </div>
-                    <div class="products__item-price">
-                        $19
-                    </div>
-                </div>
-                <div class="products__item-info d-flex justify-content-between">
-                    <a class="products__item-author d-flex align-items-center">
-                        <div class="avatar" style="background-image: url(images/content/user.jpg)"></div>
-                        <span>Radiustheme</span>    
-                    </a>
-                    <div class="products__item-stars">
-                        <div class="rate-star"></div>
-                        (<span>05</span>)
-                    </div>
-                </div>
-            </div>
-            <div class="products__item mix category-psd category-new" data-order="8">
-                <a href="#" class="products__item-img" style="background-image: url(images/content/product-item-designMockup.jpg)"></a>
-                <div class="products__item-content d-flex justify-content-between align-items-center">
-                    <div class="products__item-name">
-                        <a href="#" class="products__item-title item-title">
-                            Responsive Mobile APP
-                        </a>
-                        <a href="#" class="products__item-category">
-                            Psd Template
-                        </a>
-                    </div>
-                    <div class="products__item-price">
-                        $19
-                    </div>
-                </div>
-                <div class="products__item-info d-flex justify-content-between">
-                    <a class="products__item-author d-flex align-items-center">
-                        <div class="avatar" style="background-image: url(images/content/user.jpg)"></div>
-                        <span>Radiustheme</span>    
-                    </a>
-                    <div class="products__item-stars">
-                        <div class="rate-star"></div>
-                        (<span>05</span>)
-                    </div>
-                </div>
-            </div>
-            <div class="products__item mix category-psd category-new" data-order="8">
-                <a href="#" class="products__item-img" style="background-image: url(images/content/product-item-designMockup.jpg)"></a>
-                <div class="products__item-content d-flex justify-content-between align-items-center">
-                    <div class="products__item-name">
-                        <a href="#" class="products__item-title item-title">
-                            Responsive Mobile APP
-                        </a>
-                        <a href="#" class="products__item-category">
-                            Psd Template
-                        </a>
-                    </div>
-                    <div class="products__item-price">
-                        $19
-                    </div>
-                </div>
-                <div class="products__item-info d-flex justify-content-between">
-                    <a class="products__item-author d-flex align-items-center">
-                        <div class="avatar" style="background-image: url(images/content/user.jpg)"></div>
-                        <span>Radiustheme</span>    
-                    </a>
-                    <div class="products__item-stars">
-                        <div class="rate-star"></div>
-                        (<span>05</span>)
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- end products-slider section -->
-
-<!-- start advantages section -->
-<section class="advantages">
-    <div class="container">
-        <div class="advantages__inner">
-            <h3 class="advantages__inner-title">
-                Why You Choose Foxtar Market Place?
-            </h3>
-            <div class="advantages__inner-items d-flex justify-content-between">
-                <div class="advantages__item">
-                    <div class="advantages__item-img icosvg-1">
-                        <svg role="img" xmlns="http://www.w3.org/2000/svg" width="60px" height="77px" viewBox="0 0 24 24" aria-labelledby="lockIconTitle" stroke="#000" stroke-width="2.625" stroke-linecap="square" stroke-linejoin="miter" fill="#0098f9" color="#000"> <title id="lockIconTitle">Lock</title> <rect width="14" height="10" x="5" y="11"/> <path d="M12,3 L12,3 C14.7614237,3 17,5.23857625 17,8 L17,11 L7,11 L7,8 C7,5.23857625 9.23857625,3 12,3 Z"/></svg>
-                    </div>
-                    <div class="advantages__item-title">
-                        Easily Buy & Sell
-                    </div>
-                    <div class="advantages__item-txt">
-                        Lorem Ipsum is simply dummy text of the pring and typesetting industry. Lorem Ipsum has been the industry's standaum.
-                    </div>
-                </div>
-                <div class="advantages__item">
-                    <div class="advantages__item-img icosvg-2">
-                        <svg width="72px" height="72px" viewBox="0 0 24 24" fill="#ffdf2f" xmlns="http://www.w3.org/2000/svg" aria-labelledby="flowerIconTitle" stroke="#000" stroke-width="1.3333333333333333" stroke-linecap="square" stroke-linejoin="miter" color="#000"> <title id="flowerIconTitle">Flower</title> <path d="M12 22C13.5819 22 14.8778 20.7757 14.9918 19.223C16.1704 20.2403 17.9525 20.1896 19.0711 19.0711C20.1896 17.9525 20.2402 16.1705 19.2229 14.9918C20.7757 14.8778 22 13.5819 22 12C22 10.4181 20.7757 9.12224 19.223 9.00816C20.2403 7.82955 20.1896 6.04748 19.0711 4.92894C17.9525 3.81038 16.1705 3.75976 14.9918 4.77708C14.8778 3.22433 13.5819 2 12 2C10.4181 2 9.12224 3.22431 9.00816 4.77704C7.82955 3.75974 6.04749 3.81036 4.92894 4.92891C3.81038 6.04747 3.75977 7.82955 4.77708 9.00816C3.22433 9.12221 2 10.4181 2 12C2 13.5819 3.2243 14.8778 4.77703 14.9918C3.75974 16.1704 3.81037 17.9525 4.92891 19.0711C6.04747 20.1896 7.82955 20.2402 9.00816 19.2229C9.12221 20.7757 10.4181 22 12 22Z"/> <path d="M12 14C10.8954 14 10 13.1046 10 12C10 10.8954 10.8954 10 12 10C13.1046 10 14 10.8954 14 12C14 13.1046 13.1046 14 12 14Z"/></svg>
-                    </div>
-                    <div class="advantages__item-title">
-                        Quality Products
-                    </div>
-                    <div class="advantages__item-txt">
-                        Lorem Ipsum is simply dummy text of the pring and typesetting industry. Lorem Ipsum has been the industry's standaum.
-                    </div>
-                </div>
-                <div class="advantages__item">
-                    <div class="advantages__item-img icosvg-3">
-                        <svg role="img" xmlns="http://www.w3.org/2000/svg" width="85px" height="75px" viewBox="0 0 24 24" aria-labelledby="favouriteIconTitle" stroke="#000" stroke-width="2.6666666666666665" stroke-linecap="round" stroke-linejoin="round" fill="#cc0b59" color="#000"> <title id="favouriteIconTitle">Favourite</title> <path d="M12,21 L10.55,19.7051771 C5.4,15.1242507 2,12.1029973 2,8.39509537 C2,5.37384196 4.42,3 7.5,3 C9.24,3 10.91,3.79455041 12,5.05013624 C13.09,3.79455041 14.76,3 16.5,3 C19.58,3 22,5.37384196 22,8.39509537 C22,12.1029973 18.6,15.1242507 13.45,19.7149864 L12,21 Z"/></svg>
-                    </div>
-                    <div class="advantages__item-title">
-                       100% Secure Payment
-                    </div>
-                    <div class="advantages__item-txt">
-                        Lorem Ipsum is simply dummy text of the pring and typesetting industry. Lorem Ipsum has been the industry's standaum.
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- end advantages section -->
-<!-- start author section -->
-
-<section id="author" class="author d-flex align-items-center" style="background-image: url(images/bg-people.jpg)">
-    <div class="author__item d-flex align-items-center">
-        <h4 class="author__item-title">
-            Over <span>20,000</span> Author 
-            Are Involved Here!
-        </h4>
-        <a class="author__item-link" href="#">Become an Author</a>
-    </div>
-</section>
-
-<!-- end author section -->
-<!-- start tutorial section -->
-<section id="tutorial" class="tutorial">
-    <div class="container">
-        <h3 class="tutorial__title">
-            Free Monthly Tutorials To Help You With Your Project 
-        </h3>
-        <div class="tutorial__inner d-flex justify-content-between">
-            <div class="tutorial__item">
-                <a href="#" class="tutorial__item-img" style="background-image: url(images/content/tutorial1.jpg);"></a>
-                <a href="#" class="tutorial__item-title">
-                    Web Design Tutorials
-                </a>
-            </div>
-            <div class="tutorial__item">
-                <a href="#" class="tutorial__item-img" style="background-image: url(images/content/product-item-wordpress.jpg)"></a>
-                <a href="#" class="tutorial__item-title">
-                    WordPress Tutorials
-                </a>
-            </div>
-            <div class="tutorial__item">
-                <a href="#" class="tutorial__item-img" style="background-image: url(images/content/tutorial3.jpg)"></a>
-                <a href="#" class="tutorial__item-title">
-                    HTML & CSS Tutorials
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- end tutorial section -->
-</div>
-<!-- start footer -->
-<footer id="footer" class="footer">
-    <div class="footer__content">
-        <div class="container">
-            <div class="footer__wrapper d-flex justify-content-between">
-                <div class="footer__col">   
-                    <div class="footer__col-title">
-                        About Company
-                    </div>
-                    <p class="footer__col-txt">
-                        Praesent vel rutrum purus. Nam vel dui eu risus duis dignissim digni Suspen disse. Fusce sit amet urna iat. Praesent vel rutrum purus. 
-                    </p>
-                    <a class="footer__col-contacts footer__col-adress" href="https://goo.gl/maps/L4H7DvEvhGAfK7ds6">
-                        PO Box 16122 Collins Street West Victoria 8007 Australia
-                    </a>
-                    <a class="footer__col-contacts footer__col-phone" href="tel:+61383766284">+61 383766284</a>
-                </div>
-                <div class="footer__col footer__col-menu"> 
-                    <div class="footer__col-title">
-                        Join Our Community
-                    </div>
-                    <ul class="footer__col-list">
-                        <li>
-                            <a href="#">Home</a>
-                            <a href="#">Forums</a>
-                            <a href="#">Become An Author</a>
-                            <a href="#">Community Meetups</a>
-                            <a href="#">Become An Affiliate</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer__col footer__col-menu">   
-                    <div class="footer__col-title">
-                        Need Help?
-                    </div>
-                    <ul class="footer__col-list">
-                        <li>
-                            <a href="#">Help Center</a>
-                            <a href="#">Foxtar Market Terms</a>
-                            <a href="#">Author Terms</a>
-                            <a href="#">Foxtar Licenses</a>
-                            <a href="#">Contact Us</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer__col">   
-                    <div class="footer__col-title">
-                        Follow Us On
-                    </div>
-                    <ul class="footer__social-link">
-                        <a href="https://facebook.com" class="link-facebook"></a>
-                        <a href="https://twitter.com" class="link-twitter"></a>
-                        <a href="https://youtube.com" class="link-youtube"></a>
-                        <a href="https://linkedin.com" class="link-linkedin"></a>
-                        <a href="https://www.pinterest.com" class="link-pinterest"></a>
-                    </ul>
-                    <div class="footer__sign">
-                        <div class="footer__sign-title">
-                            Newsletter Sign Up!
+                    <div class="footer__col footer__col-menu">   
+                        <div class="footer__col-title">
+                            Need Help?
                         </div>
-                        <form class="footer__form" action="#">
-                            <input type="email" placeholder="E-mail Adresses" _required>
-                            <button class="footer__btn" type="submit"></button>
-                        </form>
+                        <ul class="footer__col-list">
+                            <li>
+                                <a href="#">Help Center</a>
+                                <a href="#">Foxtar Market Terms</a>
+                                <a href="#">Author Terms</a>
+                                <a href="#">Foxtar Licenses</a>
+                                <a href="#">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__col footer__col-social">   
+                        <div class="footer__col-title">
+                            Follow Us On
+                        </div>
+                        <ul class="footer__social-link">
+                            <a href="https://facebook.com" class="link-facebook"></a>
+                            <a href="https://twitter.com" class="link-twitter"></a>
+                            <a href="https://youtube.com" class="link-youtube"></a>
+                            <a href="https://linkedin.com" class="link-linkedin"></a>
+                            <a href="https://www.pinterest.com" class="link-pinterest"></a>
+                        </ul>
+                        <div class="footer__sign">
+                            <div class="footer__sign-title">
+                                Newsletter Sign Up!
+                            </div>
+                            <form class="footer__form" action="#">
+                                <input type="email" placeholder="E-mail Adresses" _required>
+                                <button class="footer__btn" type="submit"></button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="footer__copy">
-        <div class="container">
-            <span>
-                &#169; 2017 Foxtar market place. Trademarks and brands are the property of their respective owners.
-            </span>
+        <div class="footer__copy">
+            <div class="container">
+                <span>
+                    &#169; 2017 Foxtar market place. Trademarks and brands are the property of their respective owners.
+                </span>
+            </div>
         </div>
-    </div>
-</footer>
+    </footer>
 </div>
 <!-- end footer -->
 

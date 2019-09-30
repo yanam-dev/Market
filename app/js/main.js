@@ -23,15 +23,20 @@ $(".js-range-slider").ionRangeSlider({
     grid: true
 });
 
-$(".icon-th-list").on('click', function () {
+$('.icon-th-list').on('click', function () {
     $('.products__item').addClass('list');
     $(".icon-th-list").addClass('active');
     $(".icon-th-large").removeClass('active');
 });
-$(".icon-th-large").on('click', function () {
+$('.icon-th-large').on('click', function () {
     $('.products__item').removeClass('list');
-    $(".icon-th-large").addClass('active');
-    $(".icon-th-list").removeClass('active');
+    $('.icon-th-large').addClass('active');
+    $('.icon-th-list').removeClass('active');
+});
+
+// menu button
+$('.menu__btn').on('click', function (){
+    $('.menu__list').slideToggle();
 });
 
 

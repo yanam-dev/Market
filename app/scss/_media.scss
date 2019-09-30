@@ -1,0 +1,319 @@
+@media (max-width: 1200px){
+    .footer{
+        &__content{
+            padding: 60px 0;
+        }
+        &__wrapper{
+            flex-wrap: wrap;
+        }
+        &__col-about{
+            min-width: 100%;
+            margin-bottom: 30px;
+        }
+        &__col-contacts {
+            display: block;
+            &:before{
+                top: 0;
+            }
+        }
+        
+    }
+}
+@media (max-width: 1050px){
+    .header{
+        &__txt{
+            display: none;
+        }
+    }
+}
+@media (max-width: 850px){
+    .header{
+    &__logo{
+        margin-left: 60px;
+    }
+    &__menu{
+        height: 0;
+    }
+}
+    .menu{
+        &__list{
+            display: none;
+            background-color: $bg;
+            z-index: 1;
+            color: $text-min;
+            text-align: center;
+            top: 90px;
+            left: 0;
+            right: 0;
+            position: absolute;
+            padding-bottom: 30px;
+            li{
+                display: block;
+                border-bottom: 1px solid rgba(139, 195, 75, 0.3);
+                & + li{
+                    margin-left: 0;
+                }
+                a{
+                    display: block;
+                    padding: 10px 0;
+                }
+            }
+        } 
+        &__btn{
+            position: absolute;
+            top: 37px;
+            display: block;
+            width: 30px;
+            div{
+                background-color: $bg;
+                height: 3px;
+                border-radius: 8px;
+                & + div{
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+    .menu{
+        &__list{
+            top: 128px;
+            }
+        &__btn{
+            top: 100px;
+        }
+        }
+        .header{
+            &__logo {
+                margin-left: 0;
+        }
+            &__menu {
+                height: 36px;
+                background: $bg;
+        }
+    }
+        .menu__btn{
+            width: 25px;
+            div{
+                background-color: $text-min;
+                height: 2px;
+            }
+        }
+   .user__box{
+        .header__btn{
+            display: none;
+        }
+        .user-menu{
+            z-index: 2;
+        }
+   }
+   .basket__box,
+   .notification__box,
+   .message__box{
+        .circle__menu{
+            z-index: 2;
+        }
+   }
+    .footer{
+        &__col{
+            margin-bottom: 30px;
+        }
+        &__col-menu{
+            & + &{
+                margin-left: 60px;
+            }
+        }
+        &__col-social{
+            min-width: 100%;
+        }
+        &__wrapper{
+            justify-content: flex-start;
+        }
+
+        &__form 
+            button {
+                top: auto;
+                right: auto;
+            }
+        }
+    }
+
+@media (max-width: 700px){
+    .notification__box{
+        display: none;
+    }
+    .message__box{
+        display: none;
+    }
+    .header__box{
+        margin-left: auto;
+        .header__btn-logout{
+            display: none;
+        }
+    }
+    .user__box {
+        .user{
+            margin-right: 0;
+        }
+        .user-menu{
+            left: 0;
+       }
+        .header__btn{
+            margin-top: 5px;
+            padding: 0;
+            color: #e74c3c;
+            font-size: 13px;
+            display: block;
+        }      
+    }
+
+}
+@media (max-width: 580px){
+    .user{
+        &__data{
+            display: none; 
+        }
+        &__image{
+            margin-right: 0;
+        }
+        &__box{
+            margin-top: 53px;
+            .user-menu{
+                left: auto;
+                right: 0;
+                top: 62px;
+            }
+        }
+    }
+}
+
+@media (max-width: 540px){
+    // .header__btn-menu{
+    //     display: block;
+    // }
+    // .header__box{
+    //     .header__btn-logout{
+    //         display: none;
+    //     }
+    // }
+    // .user__box {
+    //     .user{
+    //         margin-right: 0;
+    //     }
+    //     .user-menu{
+    //         left: 0;
+    //         z-index: 1;
+    //    }
+    //     .header__btn{
+    //         margin-top: 5px;
+    //         padding: 0;
+    //         color: #e74c3c;
+    //         font-size: 13px;
+    //     }       
+    // }
+    
+    .footer{
+        &__col{
+            min-width: 100%;
+        }
+        &__col-menu{
+            & + &{
+                 margin-left: 0;
+            }
+        }
+    }
+}
+@media (max-width: 460px){
+    .user__box:hover .user-menu {
+        padding: 15px;
+    }
+    .header__logo{
+        margin-top: 6px;
+        margin-left: 0;
+    }
+    .header__btn-log {
+        width: 55px;
+    }
+    .header__circle {
+        // margin-right: 8px;
+        margin-right: 12px;
+    }
+}
+@media (max-width: 375px){
+    .basket__box{
+        .circle__menu{
+            width: 224px;
+            right: 0;
+        }
+        .circle__item{
+            width: 224px;
+        }
+    }
+    .basket__box:hover .circle__item{
+        padding: 15px 0 15px 8px;
+    }
+    .basket__btn-cart {
+        margin-left: 40px;
+        margin-bottom: 20px;
+    }
+    .basket__btn-check{
+        margin-left: 34px;
+    }
+    .basket__sum {
+        padding: 15px 17px 17px;
+    }
+    .basket__sum-title {
+        padding-left: 0;
+    }
+    .basket__sum-price {
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 340px){
+    .basket__box .circle__menu {
+        width: 100%;
+    }
+    .basket__box .circle__item {
+        width: 190px;
+    }
+    .circle__info-name {
+        font-size: 14px;
+    }
+    .basket__sum {
+        padding: 7px 12px 12px;
+    }
+    .basket__btn-cart {
+        margin-left: 30px;
+    }
+    .basket__btn-check {
+        margin-left: 22px;
+    }
+    .menu__list {
+        padding-bottom: 15px;
+    }
+    .footer__form input {
+        width: 80%;
+    }
+    .footer__copy span {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 851px){
+    .menu{
+    &__list{
+        display: block!important;
+    }
+    &__btn{
+        display: none;
+    }
+}
+
+@media (min-width: 541px){
+    .user__box{
+        .header__btn{
+            display: none;
+        }
+    }
+}
+}
