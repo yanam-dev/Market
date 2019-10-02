@@ -142,15 +142,18 @@ button:not(:disabled) {
     }
     &__list{ 
         li{
-             position: relative;
-            &:last-child{
-                padding-left: 24px;
-                color: #263238;
+            position: relative;
+            padding-left: 24px;
+            color: #263238;
+            &:before{
+            content:'-';
+            position: absolute;
+            left: 8px;
+            color: #8bc34a;
+            }
+            &:first-child{
                 &:before{
-                content:'-';
-                position: absolute;
-                left: 8px;
-                color: #8bc34a;
+                    content:'';
                 }
             }
         }
