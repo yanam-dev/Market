@@ -339,42 +339,85 @@
 .login__wrapper{
     form{
         max-width: 400px;
-        margin: 0 auto;}
-        label{
-            position: relative;
-            display: block;
+        margin: 0 auto;
+        button{
+            max-width: 140px;
             width: 100%;
-            &:before{
-                position: absolute;
-                font-family: 'icomoon';
-                font-size: 14px;
-                color: #fff;
-                left: 18px;
-                top: 10px;
-            }
-       }
-        .login__label-name:before{
-            content: "\f007";
-        }
-        
-        .login__label-pass:before{
-            content: "\f023";
-        }
-        input{
-            display: block;
-            width: 100%;
+            text-transform: uppercase;
             font-size: 14px;
-            padding-left: 40px;
-            margin-bottom: 8px;
-            height: 43px;
-            border: none;
-            background-color: #76ae36;
+            line-height: 30px;
+            padding: 9px 0;
+            text-align: center;
+            @include f700;
+            color: #000;
+            background-color: #fff;
+            box-shadow: 0px 2px 2px 0px rgba(118, 174, 54, 0.75);
+            margin-top: -2px;
+            margin-right: 10px;
+            margin-bottom: 20px;
+        }
+    }   
+    label{
+        position: relative;
+        display: block;
+        width: 100%;
+        &:before{
+            position: absolute;
+            font-family: 'icomoon';
+            font-size: 14px;
             color: #fff;
-            &::placeholder{
-                color: #fff;
-            }
+            left: 18px;
+            top: 10px;
         }
     }
+    .login__label-name:before{
+        content: "\f007";
+    }
+    
+    .login__label-pass:before{
+        content: "\f023";
+    }
+    input{
+        display: block;
+        width: 100%;
+        font-size: 14px;
+        padding-left: 40px;
+        margin-bottom: 18px;
+        height: 43px;
+        border: none;
+        background-color: #76ae36;
+        color: #fff;
+        &::placeholder{
+            color: #fff;
+        }
+    }
+    .new__account{
+        max-width: 246px;
+        width: 100%;
+        color: #fff;
+        font-size: 18px;
+        font-family: 'Roboto-Regular, sans-serif'!important;
+        line-height: 30px;
+        padding: 9px 0 11px 66px;
+        background-color: #76ae36;
+        position: relative;
+        &:before{
+            content: "\f044";
+            font-family: 'icomoon';
+            position: absolute;
+            top: 9px;
+            left: 35px;
+        }
+    }
+    .lost__password{
+        font-size: 18px;
+        
+    }
+    .fancybox-slide--html .fancybox-close-small {
+        color: #fff;
+    }
+}
+
 
 // end modal
 // start search section
@@ -1579,8 +1622,188 @@
     }
 }
 // end product-one section
-
-
+// start errors page
+.page__error-wrapper,
+.page-about__wrapper,
+.contact__wrapper {
+    background-color: #fff;
+    border: 1px solid #dcdcdc;
+    margin-bottom: 150px;
+    .error__wrapper-title,
+    .page-about__wrapper-title,
+    .contact__wrapper-title{
+        font-size: 24px;
+        @include f500;
+        padding: 23px 27px;
+        color: #444;
+        border-bottom: 1px solid #dcdcdc;
+    }
+}
+.page__error-inner{
+    background-color: $green;
+    text-align: center;
+    padding: 100px 0;
+    border: 1px solid #dcdcdc;
+    .page__error-number{
+        font-family: 'Open Sans', sans-serif; 
+        font-size: 300px;
+        color: #fff;
+        font-weight: 800;
+        line-height: 300px;
+        &:after{
+            content: '';
+            background-image: url(../images/page-404.png);
+            position: absolute;
+            width: 150px;
+            height: 292px;
+            margin-left: 12px;
+        }
+    }
+    .page__error-title{
+        color: #fff;
+        font-family: 'Open Sans', sans-serif; 
+        letter-spacing: 0.2em;
+        margin-left: 70px;
+    }
+    .page__error-txt{
+        font-size: 18px;
+        color: #fff;
+        font-family: 'Raleway', sans-serif;
+        @include f500;
+        margin-bottom: 45px;
+    }
+    .page__error-link{
+        color: #fff;
+        padding: 16px 30px;
+        border: 1px solid #fff;
+        border-radius: 4px;
+        font-family: 'Raleway', sans-serif;
+        @include f700;
+        text-transform: uppercase;
+    }
+}
+// start page-about
+.page-about__wrapper{
+    margin-bottom: 143px;
+}
+.page-about__inner{
+    padding-left: 49px;
+    padding-right: 76px;
+    .page-about__title{
+        color: #444;
+        margin-top: 40px;
+        margin-bottom: 15px;
+    }
+    .page-about__txt{
+        margin-bottom: 48px;
+        font-size: 15px;
+        letter-spacing: 0;
+        color: #707070;
+    }
+}
+// end page-about
+// start contacts page 
+.contact__wrapper-title{
+    padding: 23px 38px!important;
+}
+.contact__inner{
+    padding: 32px 38px 15px;
+    .contact__map{
+        margin-bottom: 50px;
+        iframe{
+            width: 100%;
+            height: 415px;
+        }
+    }
+    .contact__info{
+        width: 100%;
+        max-width: 330px;
+        margin-right: 30px;
+        &-item{
+            margin-bottom: 30px;
+        }
+        &-title{
+            color: $bg;
+            position: relative;
+            padding-left: 40px;
+            margin-top: 0;
+            margin-bottom: 45px;
+            font-family: 'Roboto', sans-serif!important;
+            &:before{
+                position: absolute;
+                color: $green;
+                font-size: 24px;
+                left: 0;
+                font-family: 'icomoon';
+            }
+            &:after{
+                content: '';
+                position: absolute;
+                width: 44px;
+                height: 4px;
+                background-color: $green;
+                left: 40px;
+                top: 40px;
+            }
+        }
+        &-content{
+            font-size: 15px;
+            color: #707070;
+            max-width: 230px;
+            padding-left: 40px;
+        }
+    }
+}
+.contact__form{
+    width: 100%;
+    &-title{
+        font-size: 24px;
+        color: #333;
+        @include f500;
+        margin-bottom: 20px;
+    }
+    input{
+        height: 43px;
+        border: none;
+        background-color: #f1f4f5;
+        padding-left: 17px;
+        padding-right: 17px;
+        width: 350px;
+        margin-bottom: 30px;
+        display: block;
+        outline: none;
+        &::placeholder{
+            color: #7a7a7a;
+            font-size: 15px;
+        }
+    }
+    textarea{
+        border: none;
+        background-color: #f1f4f5;
+        height: 190px;
+        padding: 13px 17px;
+        width: 100%;
+        display: block;
+        margin-bottom: 25px;
+        resize: none;
+        outline: none;
+        &::placeholder{
+            color: #7a7a7a;
+            font-size: 15px;
+        }
+    }
+    button{
+        border: none;
+        background-color: $green;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 16px;
+        @include f700;
+        color: #fff;
+        padding: 15px 35px;
+    }
+}
+// end contacts page 
 
 
 
