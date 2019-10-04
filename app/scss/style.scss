@@ -1804,7 +1804,104 @@
     }
 }
 // end contacts page 
-
+// start Settings page
+.product-one__tabs.settings__tabs{
+    display: flex;
+    padding-bottom: 150px;
+    .tabs{
+        max-width: 270px;
+        width: 100%;
+        margin-right: 30px;
+        border: 1px solid #dedede;
+        border-bottom: none;
+        display: block;
+        text-align-last: left;
+        height: 100%;
+        span{
+            display: block;
+            border-bottom: 1px solid #dedede;
+            background-color: #fff;
+            padding: 17px 17px 17px 50px;
+            color: #707070;
+            font-size: 14px;
+            @include f500;
+            &:before{
+                left: 24px;
+                color: #5d5d5d;
+            }
+            &.active{
+                color: #37474f;
+                border-bottom: 4px solid $green;
+                &:before{
+                    content: "\f105";
+                    color: $green;
+                }
+            }
+        }
+    }
+    .tabs .tab+.tab {
+        border-left: none;
+    }
+    .tab_content{
+        width: 100%;
+        padding: 0;
+        border-top: 1px solid #dcdcdc;
+        background-color: transparent;
+        .page-box{
+            min-height: 100%;
+            background-color: #fff;
+            .page-box__title{
+                font-size: 24px;
+                @include f500;
+                font-family: 'Roboto', sans-serif;
+                color: #444;
+                padding: 18px 34px;
+                border-bottom: 1px solid #dcdcdc;
+            }
+        }
+        .page-box__content{
+            padding: 30px 35px 127px;
+            position: relative;
+            label{
+                width: 260px;
+                color: #444;
+            }
+            input{
+                border: 1px solid #dcdcdc;
+                background-color: #f9f9f9;
+                color: #797979;
+                max-width: 540px;
+                width: 100%;
+                height: 40px;
+            }
+            select{
+                border: 1px solid #dcdcdc;
+                background-color: #f9f9f9;
+                color: #797979;
+                max-width: 540px;
+                width: 100%;
+                height: 40px;
+            }
+            .settings__line{
+                margin-bottom: 21px;
+           
+            }
+            button{
+                width: 106px;
+                padding: 15px 30px;
+                background-color: $green;
+                color: #fff;
+                font-size: 15px;
+                @include f500;
+                display: block;
+                left: 34%;
+                position: absolute;
+            }
+        }
+    }
+ }
+   
+// end Settings page
 
 
 
