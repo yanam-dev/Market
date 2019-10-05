@@ -1341,7 +1341,6 @@
     margin-bottom: 50px;
 }
 .product-one__link{
-    
     a{
         width: 150px;
         padding: 16px 8px;
@@ -1374,6 +1373,9 @@
     }
     .pint{
         background-color: #d32f2f;
+    }
+    .youtb{
+        background-color: #e52d27;
     }
     a{
         font-size: 18px;
@@ -1468,7 +1470,8 @@
     }
 }
 // product-one aside section 
-.product-one__aside{
+.product-one__aside,
+.profile__aside{
     .price{
         &__row{
             margin-bottom: 19px;
@@ -1496,7 +1499,8 @@
             }
         }
     }
-    .product__price{
+    .product__price,
+    .profile__aside-btn{
         button{
             width: 100%;
             box-shadow: 0px 1px 2px 0px rgba(69, 90, 100, 0.75);
@@ -1514,18 +1518,18 @@
                 font-family: 'icomoon';
                 padding-right: 8px;
             }
-            
         }
-        .icon-shopping-cart{
+        .icon-shopping-cart,
+        .profile__aside-msg{
             background-color: $green;
         }
         .icon-heart-o{
             background-color: #42a5f5;
         }
-        .icon-buy{
+        .icon-buy,
+        .icon-envelope-o{
             background-color: #546e7a;
         }
-        
     } 
     .author{
         &__box{
@@ -1544,18 +1548,7 @@
             border: 1px solid #dcdcdc;
             padding: 0 4px 0 10px;
         } 
-        &__awards-list{
-            li{
-                
-            }
-            & + li{
-                margin-left: 8px;
-            }
-            
-        }
-
     }
-
     .author__awards-list{
         margin-top: 24px;
         li{
@@ -1833,7 +1826,6 @@
                 color: #37474f;
                 border-bottom: 4px solid $green;
                 &:before{
-                    content: "\f105";
                     color: $green;
                 }
             }
@@ -1881,10 +1873,10 @@
                 max-width: 540px;
                 width: 100%;
                 height: 40px;
+                padding-left: 10px;
             }
             .settings__line{
                 margin-bottom: 21px;
-           
             }
             button{
                 width: 106px;
@@ -1900,9 +1892,171 @@
         }
     }
  }
-   
 // end Settings page
+// start profile page
+.profile__aside{
+    .author__profile{
+        position: relative;
+        max-width: 75px;
+        font-size: 13px;
+        line-height: 24px;
+        padding-right: 15px;
+        padding-left: 20px;
+        &:before{
+            content: '';
+            width: 9px;
+            height: 9px;
+            background-color: $green;
+            border-radius: 50%;
+            margin-right: 12px;
+            position: absolute;
+            top: 30%;
+            left: 10%;
+        }
+    }
+    .profile-on{
+        &:before{
+            background-color: $green;
+        }
+    }
+    .profile-off{
+        &:before{
+            background-color: $red;
+        }
+    }
+    .author__awards-list{
+        li{
+            margin-right: 5px;
+        }
+    }
+    
+}
+.profile__aside{
+    .aside__title{
+        margin-top: 0;
+    }
+    .aside__item{
+        margin-right: 30px;
+        padding: 25px 30px 30px 28px;
+        width: 270px;
+        max-width: 100%;
+    }
+    .product-one__socials{
+        a{
+            width: 28px;
+            height: 28px;
+            margin-right: 7px;
+            margin-bottom: 20px;
+        }
+    }
+}
+.profile__aside-btn{
+    margin-bottom: 30px;
+    max-width: 270px;
+    width: 100%;
+    .icon-envelope-o{
+        margin-bottom: 15px!important;
+    }
+}
+.profile{
+    &__content{
+        width: 100%;
+    }
+    &__banner{
+        padding: 20px;
+        border: 1px solid #dcdcdc;
+        background-color: #fff;
+        margin-bottom: 30px;
+    &-img{
+        background-image: url(../images/content/banner.jpg) no-repeat center center / cover;
+        min-height: 332px;
+        }
+    }
+}
+.profile{
+    &__items{
+        border: 1px solid #dcdcdc;
+        background-color: #fff;
+    }
+    &__item{
+        width: 25%;
+        padding: 8px;
+        border-right: 1px solid #dcdcdc;
+        text-align: center;
+        &-title{
+            @include f500;
+            font-size: 14px;
+            color: $bg;
+        }
+        span{
+            text-align: center;
+            color: #707070;
+            &.profile__item-sales,
+            &.rate-star__number{
+                color: $bg;
+            }     
+        }
+    }
+}
+.profile-settings{
+    .product-one__tabs.settings__tabs{
+        .tabs span{
+            @include f500;
+            font-family: 'Roboto', sans-serif!important;
+            position: relative;
+            &:before{
+               left: 23px;
+               top: 16px;
+               font-size: 14px;
+               font-family: 'icomoon';
+               color: #d0d0d0;
+               position: absolute; 
+            }
+            &.active{
+            &:before{
+                color: $green;
+                }
+            }
+        }
+    }
+    .personal-box{
+        background-color: #fff;
+        padding: 35px 45px 30px;
+        &__title{
+            margin-bottom: 25px;
+            margin-top: 0;
+        }
+        &__txt{
+            color: #707070;
+        }
+        &__item-label{
+            font-size: 16px;
+            margin-bottom: 16px;
+        }
+        &__item-title{
+            @include f500;
+        }
+        &__item-level{
+            @include f700;
+        }
+        &__item-line{
+            height: 15px;
+            background-color: #f4f4f4;
+            border-radius: 5px;
+            margin-bottom: 25px;
+            span{
+                display: block;
+                border-radius: 5px;
+                height: 15px;
+                background-image: url(../images/assets_marketcap.jpg);
+                background-repeat: repeat;
+            }
+        }
+    }
+}
 
+
+// end profile page
 
 
 
