@@ -97,11 +97,18 @@ h5{
     font-weight: f700;
 }
 input,
-select{
+select,
+textarea{
     outline: none;
     cursor: pointer;
     border-radius: 0px;
 }
+// a,
+// button,
+// input{
+//     transition: all 1s ease;
+//     cursor: pointer;
+// }
 a,
 button:focus,
 select:focus {
