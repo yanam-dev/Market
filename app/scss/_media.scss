@@ -1,4 +1,22 @@
 @media (max-width: 1200px){
+    .withdraws{
+        &__inner{
+            display: block;
+            margin-bottom: 50px;
+        }
+        &__col{
+        max-width: 100%;
+        margin-bottom: 30px;
+        }
+    }
+    .withdraws__content{
+        &-status {
+        width: 73px;
+    }
+        &-price {
+        width: 70px;
+    }
+}
     .footer{
         &__content{
             padding: 60px 0;
@@ -16,7 +34,6 @@
                 top: 0;
             }
         }
-        
     }
 }
 @media (max-width: 1050px){
@@ -187,30 +204,44 @@
 }
 
 @media (max-width: 540px){
-    // .header__btn-menu{
-    //     display: block;
-    // }
-    // .header__box{
-    //     .header__btn-logout{
-    //         display: none;
-    //     }
-    // }
-    // .user__box {
-    //     .user{
-    //         margin-right: 0;
-    //     }
-    //     .user-menu{
-    //         left: 0;
-    //         z-index: 1;
-    //    }
-    //     .header__btn{
-    //         margin-top: 5px;
-    //         padding: 0;
-    //         color: #e74c3c;
-    //         font-size: 13px;
-    //     }       
-    // }
-    
+    .header__btn-menu{
+        display: block;
+    }
+    .header__box{
+        .header__btn-logout{
+            display: none;
+        }
+    }
+    .user__box {
+        .user{
+            margin-right: 0;
+        }
+        .user-menu{
+            left: auto;
+            z-index: 1;
+       }
+        .header__btn{
+            margin-top: 5px;
+            padding: 0;
+            color: #e74c3c;
+            font-size: 13px;
+        }       
+    }
+    .withdraws__content{
+        margin-top: 35px;
+        padding-left: 10px;
+        padding-right: 25px;
+        overflow-x: scroll;
+        &-date{
+            width: 123px;
+        }
+        &-item{
+            min-width: 490px;
+        }
+    }
+    .withdraws__content-date {
+        padding-left: 10px;
+    }
     .footer{
         &__col{
             min-width: 100%;
@@ -234,8 +265,28 @@
         width: 55px;
     }
     .header__circle {
-        // margin-right: 8px;
         margin-right: 12px;
+    }
+}
+@media (max-width: 400px){
+    .breadcrumbs__inner {
+        padding: 30px 0 20px;
+    }
+    .withdraws__title {
+        font-size: 21px;
+        padding: 15px 10px;
+    }
+    .withdraws__form-line label {
+        font-size: 14px;
+    }
+    .withdraws__content {
+        margin-top: 20px;
+    }
+    .footer__content {
+        padding: 30px 0;
+    }
+    .footer__copy span {
+        font-size: 13px;
     }
 }
 @media (max-width: 375px){
@@ -267,11 +318,15 @@
     .basket__sum-price {
         padding-right: 0;
     }
+    .withdraws__form-line label {
+        font-size: 13px;
+    }
 }
 
 @media (max-width: 340px){
     .basket__box .circle__menu {
-        width: 100%;
+       width: 190px;
+        right: 0;
     }
     .basket__box .circle__item {
         width: 190px;
@@ -290,6 +345,12 @@
     }
     .menu__list {
         padding-bottom: 15px;
+    }
+    .search__inner-txt{
+        font-size: 18px;
+    } 
+    .withdraws__form-line label {
+        font-size: 12px;
     }
     .footer__form input {
         width: 80%;

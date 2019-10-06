@@ -1925,7 +1925,6 @@
             margin-right: 5px;
         }
     }
-    
 }
 .profile__aside{
     .aside__title{
@@ -2089,9 +2088,6 @@
             span{
                 color: $green;
             }
-            &::placeholder{
-                color: #707070;
-            }
         }
         select,
         input,
@@ -2104,6 +2100,9 @@
             padding: 10px 18px;
             display: block;
             outline: none;
+            &::placeholder{
+                color: #707070;
+            }
         }
         textarea{
             resize: none;
@@ -2111,13 +2110,9 @@
             padding: 8px 18px;
         }
     }
-    button{
-        border: none;
-        background-color: $green;
-        color: #fff;
+    .form-btn{
         padding: 18px 36px;
         margin-left: 175px;
-        cursor: pointer;
     }
     .jq-selectbox{
         width: 100%;
@@ -2217,8 +2212,165 @@
         }
     }
 }
-
 // end upload page
+// start withdraws page
+.withdraws{
+    &__inner{
+        margin-bottom: 146px;
+    }
+    &__col{
+        width: 100%;
+        height: 100%;
+        max-width: 570px;
+        background-color: #fff;
+        border: 1px solid #dedede;
+    }
+    &__title{
+        font-size: 24px;
+        color: $bg;
+        @include f500;
+        padding: 15px 33px;
+        border-bottom: 1px solid #dedede;
+    }
+    &__content{
+        margin-top: 30px;
+        padding-left: 35px;
+        padding-right: 40px;
+        
+    }
+    &__form-line{
+        margin-bottom: 25px;
+        label{
+            display: block;
+            color: #444;
+            min-width: 175px;
+            padding-right: 15px;
+            font-size: 16px;
+            @include f500;
+            margin-bottom: 18px;
+            span{
+                color: $green;
+            }
+        }
+        select,
+        input{
+            width: 100%;
+            background-color: #f9f9f9;
+            border: 1px solid #dedede;
+            width: 100%;
+            height: 40px;
+            color: #707070;
+            padding: 10px 18px;
+            display: block;
+            outline: none;
+            &::placeholder{
+                color: #707070;
+            }
+        }
+    }
+   .form-btn{
+        padding: 18px 28px;
+        @include f700;
+        margin-left: 0;
+        margin-bottom: 14px;
+    }
+    .jq-selectbox{
+        width: 100%;
+        border-radius: 0px;
+        position: relative;
+        background-color: #f9f9f9;
+        &.focused .upload__inner{
+            border: 1px solid #dedede;
+        }
+        &.focused .jq-selectbox__select{
+            border: 1px solid #dedede;
+        }
+        li{
+            display: block;
+            color: #707070;
+            padding: 5px 0 6px;
+            &:before{
+                content: '-------';
+                position: absolute;
+                top: 5%;
+            }
+            &:first-child{
+                color: transparent;
+                background-color: none;
+            }
+        }
+        li.selected{
+            background-color: #f9f9f9;
+        }
+        &__select{
+            font-size: 15px;
+            background-color: #f9f9f9;
+            background: -webkit-gradient(linear, left top, left bottom, from(#f9f9f9));
+            &:hover{
+                background-color: #f9f9f9;
+                background: -webkit-gradient(linear, left top, left bottom, from(#f9f9f9));
+            }
+            &.focused{
+                border: 1px solid #dedede;
+            }
+        }
+        &__select,
+        &__dropdown{
+            border-radius: 0px;
+            border: 1px solid #dedede;
+            box-shadow: none;
+            background-color: #f9f9f9;
+            text-shadow: none;
+            color: #707070;
+            background: linear-gradient(#f9f9f9);
+            padding: 0 45px 0 16px;
+            &:hover{
+                background: linear-gradient(transparent);
+                background: -webkit-gradient(linear, left top, left bottom, from(#f9f9f9));
+            }
+        }
+        &__trigger{
+            border:none;
+            &-arrow{
+                border-top: 5px solid #444;
+            }
+        }
+    }
+}
+.withdraws__content{
+    padding-bottom: 36px;
+    &-item{
+        height: 43px;
+        font-size: 13px;
+        @include f500;
+        &:nth-child(odd){
+            background-color: #f9f9f9;
+            border-radius: 5px;
+        }
+    }
+    &-date{
+        width: 154px;
+        padding-left: 20px;
+        @include f500;
+    }
+    &-email{
+        width: 180px;
+    }
+    &-price{
+       width: 70px;
+       @include f700;
+    }
+    &-status{
+        width: 88px;
+        @include f700;
+        &.withdraws__content-paid{
+            color: $green;
+        }
+    }
+}
+//end withdraws page
+
+
 
 
 @import 'media';
