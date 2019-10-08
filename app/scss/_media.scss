@@ -2,7 +2,7 @@
     .withdraws{
         &__inner{
             display: block;
-            margin-bottom: 50px;
+            margin-bottom: 100px;
         }
         &__col{
         max-width: 100%;
@@ -12,11 +12,22 @@
     .withdraws__content{
         &-status {
         width: 73px;
-    }
+        }
         &-price {
         width: 70px;
+        }
     }
-}
+    .page-about__inner {
+        padding: 0 27px;
+    }
+    .page-about__content .form-btn{
+        padding: 15px 30px;
+        margin-left: 259px;
+        }
+    .product-one__tabs.settings__tabs .tab_content .page-box__content .form-btn {
+        margin-left: 196px;
+        max-width: 100%;
+    }
     .footer{
         &__content{
             padding: 60px 0;
@@ -36,11 +47,50 @@
         }
     }
 }
+@media (max-width: 1175px){
+    .contact__form-row{
+        display: block;
+    }
+    .contact__form{
+        input{
+            width: 100%;
+        }
+    }
+}
+
 @media (max-width: 1050px){
     .header{
         &__txt{
             display: none;
         }
+    }
+    .product-one__tabs.settings__tabs .tab_content .page-box__content .form-btn {
+        margin-left: 177px;
+    }
+}
+@media (max-width: 960px){
+    .page__error-inner .page__error-number:after {
+        width: 50px;
+        height: 100px;
+        margin-left: 0;
+        background-size: cover;
+    }
+    .product-one__tabs.settings__tabs {
+        display: block;
+        padding-bottom: 100px;
+        .tab_content .page-box__content {
+            padding: 30px 35px 66px;
+        }
+        .tabs{
+            margin-bottom: 20px;
+            max-width: 100%;
+        }
+        .tab_content .page-box__content .form-btn {
+            margin-left: 199px;
+        }
+    }
+    .footer__content {
+        padding: 50px 0;
     }
 }
 @media (max-width: 850px){
@@ -52,6 +102,14 @@
         height: 0;
     }
 }
+    .jq-selectbox {
+        z-index: 0;
+    }
+    .upload__inner{
+        input{
+            font-size: 96%;
+        }
+    }
     .menu{
         &__list{
             display: none;
@@ -130,6 +188,25 @@
             z-index: 2;
         }
    }
+   .product-one__tabs.settings__tabs .tab_content .page-box__content {
+       .form-btn {
+            margin-left: 0;
+            margin-top: 4px;
+        }
+        .settings__line {
+            display: block;
+            label{
+                display: inline-block;
+                margin-bottom: 5px;
+            }
+        }
+   }
+   .contact__box{
+       display: block;
+   }
+   .contact__wrapper {
+        margin-bottom: 100px;
+    }
     .footer{
         &__col{
             margin-bottom: 30px;
@@ -145,7 +222,6 @@
         &__wrapper{
             justify-content: flex-start;
         }
-
         &__form 
             button {
                 top: auto;
@@ -153,7 +229,24 @@
             }
         }
     }
-
+@media (max-width: 740px){
+    .page__error-inner .page__error-number {
+        font-size: 180px;
+        color: #fff;
+        line-height: 200px;
+    }
+    .page__error-inner .page__error-link {
+        color: #fff;
+        padding: 12px 26px;
+    }
+    .page__error-inner .page__error-title{
+        font-size: 27px;
+        margin-left: 0;
+    }
+    .page__error-wrapper, .page-about__wrapper, .contact__wrapper {
+        margin-bottom: 75px;
+    }
+}
 @media (max-width: 700px){
     .notification__box{
         display: none;
@@ -182,7 +275,9 @@
             display: block;
         }      
     }
-
+    .withdraws__inner {
+        margin-bottom: 70px;
+    }
 }
 @media (max-width: 580px){
     .user{
@@ -201,8 +296,32 @@
             }
         }
     }
+    .upload__inner{
+        margin-bottom: 50px;
+        &-title{
+            font-size: 20px;
+        }
+    }
+    .upload__inner-line input{
+        height: 36px;
+    }
+    .upload__inner-content {
+        padding: 32px 32px 50px;
+    }
+    .upload__inner-line {
+        display: block;
+        label{
+            margin-bottom: 8px;
+            display: inline-block;
+        }
+    }
+    .product-one__tabs.settings__tabs {
+        padding-bottom: 70px;
+        .tab_content .page-box__content {
+            padding: 30px 35px 50px;
+        }
+    }
 }
-
 @media (max-width: 540px){
     .header__btn-menu{
         display: block;
@@ -218,7 +337,6 @@
         }
         .user-menu{
             left: auto;
-            z-index: 1;
        }
         .header__btn{
             margin-top: 5px;
@@ -241,6 +359,26 @@
     }
     .withdraws__content-date {
         padding-left: 10px;
+    }
+    .page__error-inner .page__error-number {
+        font-size: 150px;
+        line-height: 150px;
+    }
+    .page__error-inner .page__error-title {
+        font-size: 23px;
+    }
+    .page__error-inner .page__error-txt {
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
+    .page__error-inner .page__error-link {
+        padding: 10px 24px;
+    }
+    .page__error-inner {
+        padding: 90px 0;
+    }
+    .upload__inner .form-btn{
+        margin-left: 0;
     }
     .footer{
         &__col{
@@ -267,13 +405,58 @@
     .header__circle {
         margin-right: 12px;
     }
+    .page__error-inner {
+        padding: 80px 15px;
+        .page__error-number:after {
+            width: 51px;
+            height: 100px;
+            margin-left: 8px;
+            margin-top: -12px;
+            background-size: cover;
+        }
+        .page__error-number {
+            font-size: 120px;
+            line-height: 120px;
+        }
+        .page__error-title {
+            font-size: 19px;
+        }
+        .page__error-txt {
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+    } 
+    .contact__inner {
+        padding: 31px 15px 15px;
+        .contact__map {
+            margin-bottom: 30px;
+        }
+        .contact__info-title:before {
+            font-size: 21px;
+            left: 4px;
+            top: -2px;
+        }
+    }
+    .contact__form {
+        input,
+        textarea{
+            margin-bottom: 20px;
+        }
+        button{
+            font-size: 14px;
+            padding: 15px 27px;
+        }
+        &-title{
+            font-size: 20px;
+        }
+    }
 }
 @media (max-width: 400px){
     .breadcrumbs__inner {
         padding: 30px 0 20px;
     }
     .withdraws__title {
-        font-size: 21px;
+        font-size: 20px;
         padding: 15px 10px;
     }
     .withdraws__form-line label {
@@ -282,11 +465,86 @@
     .withdraws__content {
         margin-top: 20px;
     }
+    .upload__inner{
+        input,
+        textarea{
+            font-size: 86%;
+        }
+    }
+    .page__error-inner {
+        padding: 60px 15px;
+        .page__error-number {
+            font-size: 90px;
+            line-height: 90px;
+        }
+        .page__error-number:after {
+            width: 40px;
+            height: 78px;
+            margin-left: 6px;
+            margin-top: -10px;
+        }
+        .page__error-title {
+            font-size: 17px;
+            line-height: 27px;
+        }
+        .page__error-txt {
+            font-size: 13px;
+            margin-bottom: 20px;
+        } 
+        .page__error-link {
+            padding: 8px 18px;
+            font-size: 13px;
+        } 
+    }
+    .page__error-wrapper,
+    .page-about__wrapper{
+        margin-bottom: 50px;
+        .error__wrapper-title,
+        .page-about__wrapper-title{
+            font-size: 20px;
+        }
+    } 
+    .page-about__inner {
+       .page-about__title {
+        font-size: 18px;
+            margin-top: 30px;
+        } 
+        .page-about__txt {
+            margin-bottom: 30px;
+        }
+    }
+    .product-one__tabs.settings__tabs .tab_content {
+        .page-box__content {
+            padding: 30px 35px 35px;
+        }
+        .page-box .page-box__title {
+            font-size: 20px;
+        }
+    }
+    .upload__inner {
+        margin-bottom: 50px;
+        .jq-selectbox__select {
+            font-size: 13px;
+        }
+        .form-btn {
+           margin-left: 0;
+           @include f500;
+           padding: 14px 28px;
+        }
+    }
     .footer__content {
-        padding: 30px 0;
+        padding: 35px 0 15px;
     }
     .footer__copy span {
         font-size: 13px;
+    }
+    .footer__col-title{
+        font-size: 20px;
+        line-height: 20px;
+    }
+    .footer__col-txt,
+    .footer__col-contacts{
+        font-size: 14px;
     }
 }
 @media (max-width: 375px){
@@ -377,4 +635,5 @@
         }
     }
 }
+
 }
