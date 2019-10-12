@@ -1142,9 +1142,12 @@
 .product-page__content{
    .product-page__items{
         flex-wrap: wrap;
+        justify-content: flex-start;
+        margin-left: -30px;
     }
     .products__item{
-        max-width: 270px;
+        flex-basis: calc(33.3333% - 30px);
+        margin-left: 30px;
         box-shadow: none;
         box-shadow: 0px 1px 2px 0px rgba(205, 214, 222, 0.75);
         background-color: #fff;
@@ -1252,6 +1255,7 @@
         transition: all 0.5s cubic-bezier(0.64, 0.54, 0.3, 0.58);
         &.list{
             max-width: 100%;
+            flex-basis: 100%;
             margin-bottom: 32px;
             &:nth-child(7),
             &:nth-child(8),

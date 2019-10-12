@@ -39,9 +39,6 @@ body{
 .content{
     flex: 1 0 auto;
 }
-// .page-content{
-//     background-color: #f4f6f5;
-// }
 ul,
 li{
     margin: 0;
@@ -49,7 +46,6 @@ li{
     list-style: none;
     display: inline-block;
 }
-
 a {
     text-decoration: none;
     display: inline-block;
@@ -160,41 +156,31 @@ button:not(:disabled) {
 .breadcrumbs{
     &__inner{
         padding: 45px 0 40px;
+        width: 1200px;
+        overflow: hidden;
     }
     &__list{ 
-        li{
-            position: relative;
-            padding-left: 24px;
-            color: #263238;
-            &:before{
-            content:'-';
-            position: absolute;
-            left: 8px;
-            color: #8bc34a;
-            }
-            &:first-child{
-                &:before{
-                    content:'';
-                }
-            }
-        }
-        li > a{
+        .breadcrumbs__link{
             color: #b0bec5;
-            font-size: 15px; 
         }
-      }
-    a,
-    span{
-        color: #263238;  
-        font-size: 15px; 
+        .breadcrumbs-divider{
+            color: #8bc34a;
+            padding: 0 10px 0 8px;
+        }
+        span:last-child{
+            a{
+                color: #263238;  
+                font-size: 15px; 
+            }
+        }
     }
 }
 // end breadcrumbs section
-
-
-
-
-
+@media (max-width: 1100px){
+    body{
+        line-height: 21px;
+    }
+}
 @media (max-width: 720px){
     .container-fluid{
         padding: 0 15px;
