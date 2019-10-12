@@ -34,14 +34,11 @@ $bg-frame: #fff;
         display: block;
         color: #707070;
         padding: 5px 0 6px;
-        &:before{
-            content: '-------';
-            position: absolute;
-            top: 5%;
-        }
         &:first-child{
-            color: transparent;
             background-color: none;
+        }
+        &:hover{
+            background-color: transparent;
         }
     }
     li.selected{
