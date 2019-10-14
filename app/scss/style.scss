@@ -485,6 +485,10 @@
 // start products section
 .products{
     padding: 110px 0 130px;
+    &__wrapper{
+        max-width: 2040px;
+        margin: 0 auto;
+    }
     &__title{
         margin-bottom: 30px;
     }
@@ -512,6 +516,8 @@
     box-shadow: 0px 16px 20px 0px rgba(216, 216, 216, 0.75);
     max-width: 442px;
     width: 100%;
+    flex-basis: calc(25% - 30px);
+    margin-left: 30px;
     margin-bottom: 30px;
     &-img{
         min-height: 250px;
@@ -574,7 +580,8 @@
 }
 .products__box{
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: flex-start;
+    margin-left: -30px;
 }
 .products__bottom-btn{
     margin-top: 45px;
@@ -599,12 +606,25 @@
 .products-slider{
     background: #fff;
     padding: 66px 0 120px;
+    &__wrapper{
+         max-width: 2040px;
+         margin: 0 auto;
+    }
+    .products__item{
+        box-shadow: none;
+        &-content{
+            border: 1px solid #e7ecf2;
+        }
+        &-info{
+            border: 1px solid #e7ecf2;
+            border-top: none;
+        }
+    }
 }
 .slick-dots {
-   margin-top: 40px;
+    margin-top: 40px;
     display: block;
     text-align: center;
-    
     li{
         margin-left: 3px;
         margin-right: 3px;
@@ -624,8 +644,8 @@
             box-shadow: 0px 1px 3px 0px rgba(204, 216, 228, 0.9);
             border-radius: 50%;
         }
+        }
     }
-   }
 }
 .slick-dots li.slick-active button:before {
     background-color: $green;
@@ -726,7 +746,7 @@
 // end author section
 // start tutorial section
 .tutorial{
-    padding: 60px 0 120px;
+    padding: 70px 0 120px;
     background-color: #fff;
     &__item{
         a{max-width: 370px;
