@@ -3,8 +3,8 @@ $(function(){
 $(".rate-star").rateYo({
     rating: 5,
     starWidth: "12px",
-    // readOnly: true
-    });
+});
+
 $('.products-slider__inner').slick({
     dots: true,
     arrows: false,
@@ -37,9 +37,6 @@ $('.products-slider__inner').slick({
             arrows: true
           }
         }
-        // You can unslick at a given breakpoint now by adding:
-        // settings: "unslick"
-        // instead of a settings object
       ]
 });
 
@@ -84,7 +81,5 @@ $('.product-one__tabs .tab, .settings__tabs .tab').on('click', function(event) {
 $('input[type="file"], select').styler();
 
     var mixer = mixitup('.products__box');
-    
-   
     
 });

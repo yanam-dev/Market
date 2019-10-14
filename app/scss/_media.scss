@@ -10,6 +10,11 @@
         }
     }
 }
+@media (max-width: 1400px){
+    .products .products__item{
+        flex-basis: calc(33.3333% - 30px);
+    }
+}
 @media (max-width: 1240px){
     .products-slider__inner{
         .products__item{
@@ -18,11 +23,6 @@
     }
     .tutorial__item{
         padding: 0 5px;
-    }
-}
-@media (max-width: 1400px){
-    .products__item{
-        flex-basis: calc(33.3333% - 30px);
     }
 }
 @media (max-width: 1200px){
@@ -83,10 +83,13 @@
             width: 100%;
         }
     }
-    .products__item{
-        flex-basis: calc(50% - 30px);
-        max-width: 100%;
+    .products{
+       .products__item{
+            flex-basis: calc(50% - 30px);
+            max-width: 100%;
+        } 
     }
+    
     .advantages__item {
         &:first-child{
             margin-left: 30px;
@@ -130,6 +133,11 @@
             margin-right: 20px;
         }
     }
+    .advantages{
+        h3{
+            margin-top: 0;
+        }
+    }
     .advantages__item {
         margin-right: 30px;
     }
@@ -139,6 +147,9 @@
         .products__item{
             flex-basis: calc(50% - 30px);
         }
+    }
+    .product-one__tabs.settings__tabs .tab_content .page-box__content .form-btn {
+        margin-left: 186px;
     }
     .product-page__items .products__item.list {
         .products__item-txt {
@@ -172,9 +183,6 @@
         &__txt{
             display: none;
         }
-    }
-    .product-one__tabs.settings__tabs .tab_content .page-box__content .form-btn {
-        margin-left: 177px;
     }
     .product-page__content .products__item-info {
         padding: 0px 23px; 
@@ -216,6 +224,9 @@
         }
         .circle__info-name {
             margin-top: 5px;
+        }
+        .author__profile{
+            margin: 0 auto;
         }
     }
     .product-one__aside{
@@ -591,7 +602,7 @@
         padding: 90px 0;
     }
     .tutorial {
-        padding: 64px 0 90px;
+        padding: 64px 0 70px;
     }
     .products h3, .products-slider h3, .advantages h3, .tutorial h3 {
         font-size: 28px;
@@ -679,10 +690,14 @@
         }
         .advantages__item-txt{
             max-width: 100%;
+            width: 500px;
+            }
+        }
+        .advantages__inner-items .advantages__item:last-child {
+            margin-top: 0;
+            margin-bottom: 0;
         }
     }
-}
-
 @media (max-width: 700px){
     .notification__box{
         display: none;
@@ -718,9 +733,6 @@
         &-title{
             font-size: 34px;
         }
-        &-txt {
-            font-size: 16px;
-        }
     }
     #modal{
         padding: 90px 40px 100px;
@@ -728,7 +740,10 @@
             max-width: 100%;
         }
     }
-    
+    .products .products__item{
+        flex-basis: 100%;
+        max-width: 100%;
+    }
 }
 @media (max-width: 620px){
     .profile__banner-img {
@@ -995,6 +1010,9 @@
             }
         }
     }
+    .product-one__tabs.settings__tabs .tabs span {
+        border-bottom: none;
+    }
     .product-one__tabs .tabs .tab+.tab {
         border-left: 0px;
     }
@@ -1085,6 +1103,9 @@
             left: 4px;
             top: -2px;
         }
+    }
+    .contact__wrapper-title {
+        padding: 23px 38px 23px 18px!important;
     }
     .contact__form {
         input,
@@ -1259,15 +1280,6 @@
     .footer__col-contacts{
         font-size: 14px;
     }
-    // .basket__box{
-    //     .circle__menu{
-    //         width: 100%;
-    //         right: 0;
-    //     }
-    //     .circle__item{
-    //         width: 224px;
-    //     }
-    // }
 }
 @media (max-width: 375px){
     .basket__box{
@@ -1280,25 +1292,6 @@
             width: 224px;
         }
     }
-    // .basket__box:hover .circle__item{
-    //     padding: 15px 0 15px 8px;
-    // }
-    // .basket__btn-cart {
-    //     margin-left: 40px;
-    //     margin-bottom: 20px;
-    // }
-    // .basket__btn-check{
-    //     margin-left: 34px;
-    // }
-    // .basket__sum {
-    //     padding: 15px 17px 17px;
-    // }
-    // .basket__sum-title {
-    //     padding-left: 0;
-    // }
-    // .basket__sum-price {
-    //     padding-right: 0;
-    // }
     .withdraws__form-line label {
         font-size: 13px;
     }
@@ -1359,7 +1352,14 @@
             margin-left: 12px;
         }
     }
-    
+    .products .products__item-name{
+        .item-title{
+            font-size: 16px;
+        }
+        .products__item-category{
+            font-size: 13px;
+        }
+    }
     .menu__list {
         padding-bottom: 15px;
     }
